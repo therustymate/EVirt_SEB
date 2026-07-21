@@ -28,7 +28,7 @@
 
 # **Dynamic Reverse Engineering**
 
-The file: *[2026-07-21_20h46m25s_Runtime.log](./dynamic/logs/2026-07-21_20h46m25s_Runtime.log)* suggest that at **20:46:56.551**, the VM validation procedure was started and ended at **20:46:58.012**. Using this information, it is possible to identify which componenets SEB accessed during this procedure.
+The file: *[2026-07-21_20h46m25s_Runtime.log](./dynamic/logs/2026-07-21_20h46m25s_Runtime.log)* suggest that at **20:46:56.551**, the VM validation procedure was started and ended at **20:46:58.012**. Using this information, it is possible to identify which system information SEB queried for VM detection during this procedure. The runtime log can be found in the following folder: `C:\Users\%username%\AppData\Local\SafeExamBrowser\Logs`.
 
 
 ```bash
@@ -39,6 +39,54 @@ $ cat 2026-07-21_20h46m25s_Runtime.log | grep "virtual"
 ```
 
 [ProcMon (Process Monitor)](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) can show which Windows Registry, File, SEB accessed during this time.
+
+Searching the file: *[ProcMon_SEB.csv](./dynamic/dumps/ProcMon_SEB.csv)* will provide potential information essential to identifying system information SEB queried for VM detection:
+
+```bash
+$ cat ProcMon_SEB.csv | grep ".531"
+"8:46:23.9355311 PM","SafeExamBrowser.exe","6960","Load Image","C:\Windows\System32\msvcp_win.dll","SUCCESS","Image Base: 0x7ffef0010000, Image Size: 0xa3000"
+```
+
+Using the `grep` search command: `cat ProcMon_SEB.csv | grep -E "^......56|^......57|^......58"`
+
+```bash
+$ cat ProcMon_SEB.csv | grep -E "^......56|^......57|^......58"
+...
+"8:46:56.9634035 PM","SafeExamBrowser.exe","6960","RegOpenKey","HKLM\System\CurrentControlSet\Enum\SWD\MMDEVAPI\MICROSOFTGSWAVETABLESYNTH","SUCCESS","Desired Access: Query Value, Maximum Allowed"
+"8:46:56.9634116 PM","SafeExamBrowser.exe","6960","RegQueryValue","HKLM\System\CurrentControlSet\Enum\SWD\MMDEVAPI\MicrosoftGSWavetableSynth\HardwareID","NAME NOT FOUND","Length: 4,108"
+"8:46:56.9634185 PM","SafeExamBrowser.exe","6960","RegCloseKey","HKLM\System\CurrentControlSet\Enum\SWD\MMDEVAPI\MicrosoftGSWavetableSynth","SUCCESS",""
+...
+```
+
+Redirecting this output to a new modified .CSV file: *[ProcMon_SEB_modified01.csv](./dynamic/outputs/ProcMon_SEB_modified01.csv)* will allow us to inspect which system information SEB queried for VM detection with less noises.
+
+Using the `grep` output redirection command: 
+
+```bash
+cat ProcMon_SEB.csv | grep -E "^......56|^......57|^......58" > ../outputs/ProcMon_SEB_modified01.csv
+```
+
+After removing extra data included before **20:46:56.551** and after **20:46:58.012**, it is possible to see the system information SEB queried: *[ProcMon_SEB_modified02.csv](./dynamic/outputs/ProcMon_SEB_modified02.csv)*
+
+The custom python script: *[procmon_csv_parser.py](../src/procmon_csv_parser.py)* can parse the ProcMon CSV file and list unique items on selected columns.
+
+```bash
+$ python3 procmon_csv_parser.py -c 5 -f ../research/dynamic/outputs/ProcMon_SEB_modified02.csv
+...
+HKLM\System\CurrentControlSet\Services\Tcpip\Parameters
+HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\Domain
+HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\Hostname
+...
+```
+
+Using the custom python script output redirection command:
+
+```bash
+$ python3 procmon_csv_parser.py -c 5 -f ../research/dynamic/outputs/ProcMon_SEB_modified02.csv > ../research/dynamic/outputs/unique_queried_sys_info_items.txt
+```
+
+*--- Ended at 2026-07-21 11:28 PM NZD ---*
+
 
 
 

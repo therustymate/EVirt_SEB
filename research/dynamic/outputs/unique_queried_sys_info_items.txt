@@ -1,0 +1,551 @@
+
+C:\Program Files\SafeExamBrowser
+C:\Program Files\SafeExamBrowser\*
+C:\Program Files\SafeExamBrowser\Application
+C:\Program Files\SafeExamBrowser\Application\*
+C:\Program Files\SafeExamBrowser\Application\BouncyCastle.Cryptography.dll
+C:\Program Files\SafeExamBrowser\Application\CFGMGR32.dll
+C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.Core.dll
+C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe
+C:\Program Files\SafeExamBrowser\Application\CefSharp.Core.Runtime.dll
+C:\Program Files\SafeExamBrowser\Application\CefSharp.Core.dll
+C:\Program Files\SafeExamBrowser\Application\CefSharp.WinForms.dll
+C:\Program Files\SafeExamBrowser\Application\CefSharp.dll
+C:\Program Files\SafeExamBrowser\Application\DEVOBJ.dll
+C:\Program Files\SafeExamBrowser\Application\FontAwesome.WPF.dll
+C:\Program Files\SafeExamBrowser\Application\KGySoft.CoreLibraries.dll
+C:\Program Files\SafeExamBrowser\Application\KGySoft.Drawing.Core.dll
+C:\Program Files\SafeExamBrowser\Application\KGySoft.Drawing.dll
+C:\Program Files\SafeExamBrowser\Application\NAudio.Core.dll
+C:\Program Files\SafeExamBrowser\Application\NAudio.Wasapi.dll
+C:\Program Files\SafeExamBrowser\Application\Newtonsoft.Json.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Applications.Contracts.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Applications.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Browser.Contracts.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Browser.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Client.exe
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Communication.Contracts.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Communication.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Configuration.Contracts.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Configuration.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Core.Contracts.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Core.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.I18n.Contracts.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.I18n.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Logging.Contracts.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Logging.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Monitoring.Contracts.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Monitoring.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Proctoring.Contracts.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Proctoring.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Server.Contracts.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Server.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Settings.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.SystemComponents.Contracts.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.SystemComponents.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.UserInterface.Contracts.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.UserInterface.Desktop.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.UserInterface.Mobile.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.UserInterface.Shared.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.WindowsApi.Contracts.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.WindowsApi.dll
+C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.exe
+C:\Program Files\SafeExamBrowser\Application\Syroot.KnownFolders.dll
+C:\Program Files\SafeExamBrowser\Application\System.Security.Principal.Windows.dll
+C:\Program Files\SafeExamBrowser\Application\System32\drivers\dxgkrnl.sys
+C:\Program Files\SafeExamBrowser\Application\chrome_elf.dll
+C:\Program Files\SafeExamBrowser\Application\d3dcompiler_47.dll
+C:\Program Files\SafeExamBrowser\Application\dxcompiler.dll
+C:\Program Files\SafeExamBrowser\Application\dxil.dll
+C:\Program Files\SafeExamBrowser\Application\libEGL.dll
+C:\Program Files\SafeExamBrowser\Application\libGLESv2.dll
+C:\Program Files\SafeExamBrowser\Application\libcef.dll
+C:\Program Files\SafeExamBrowser\Application\locales
+C:\Program Files\SafeExamBrowser\Application\locales\*
+C:\Program Files\SafeExamBrowser\Application\seb_x64.dll
+C:\Program Files\SafeExamBrowser\Application\vk_swiftshader.dll
+C:\Program Files\SafeExamBrowser\Application\vulkan-1.dll
+C:\Program Files\SafeExamBrowser\Configuration
+C:\Program Files\SafeExamBrowser\Configuration\*
+C:\Program Files\SafeExamBrowser\Configuration\ProDotNetZip.dll
+C:\Program Files\SafeExamBrowser\Configuration\SEBConfigTool.exe
+C:\Program Files\SafeExamBrowser\Configuration\System.Buffers.dll
+C:\Program Files\SafeExamBrowser\Configuration\System.Memory.dll
+C:\Program Files\SafeExamBrowser\Configuration\System.Numerics.Vectors.dll
+C:\Program Files\SafeExamBrowser\Configuration\System.Runtime.CompilerServices.Unsafe.dll
+C:\Program Files\SafeExamBrowser\Configuration\System.Security.AccessControl.dll
+C:\Program Files\SafeExamBrowser\Configuration\System.Security.Permissions.dll
+C:\Program Files\SafeExamBrowser\Configuration\System.Security.Principal.Windows.dll
+C:\Program Files\SafeExamBrowser\Configuration\System.Text.Encoding.CodePages.dll
+C:\Program Files\SafeExamBrowser\Configuration\de
+C:\Program Files\SafeExamBrowser\Configuration\de\*
+C:\Program Files\SafeExamBrowser\Configuration\de\SEBConfigTool.resources.dll
+C:\Program Files\SafeExamBrowser\Configuration\seb_x64.dll
+C:\Program Files\SafeExamBrowser\Reset
+C:\Program Files\SafeExamBrowser\Reset\*
+C:\Program Files\SafeExamBrowser\Reset\NAudio.Core.dll
+C:\Program Files\SafeExamBrowser\Reset\NAudio.Wasapi.dll
+C:\Program Files\SafeExamBrowser\Reset\SafeExamBrowser.Configuration.Contracts.dll
+C:\Program Files\SafeExamBrowser\Reset\SafeExamBrowser.Lockdown.Contracts.dll
+C:\Program Files\SafeExamBrowser\Reset\SafeExamBrowser.Lockdown.dll
+C:\Program Files\SafeExamBrowser\Reset\SafeExamBrowser.Logging.Contracts.dll
+C:\Program Files\SafeExamBrowser\Reset\SafeExamBrowser.Logging.dll
+C:\Program Files\SafeExamBrowser\Reset\SafeExamBrowser.ResetUtility.exe
+C:\Program Files\SafeExamBrowser\Reset\SafeExamBrowser.Settings.dll
+C:\Program Files\SafeExamBrowser\Reset\SafeExamBrowser.SystemComponents.Contracts.dll
+C:\Program Files\SafeExamBrowser\Reset\SafeExamBrowser.SystemComponents.dll
+C:\Program Files\SafeExamBrowser\Reset\SafeExamBrowser.WindowsApi.Contracts.dll
+C:\Program Files\SafeExamBrowser\Service
+C:\Program Files\SafeExamBrowser\Service\*
+C:\Program Files\SafeExamBrowser\Service\SafeExamBrowser.Communication.Contracts.dll
+C:\Program Files\SafeExamBrowser\Service\SafeExamBrowser.Communication.dll
+C:\Program Files\SafeExamBrowser\Service\SafeExamBrowser.Configuration.Contracts.dll
+C:\Program Files\SafeExamBrowser\Service\SafeExamBrowser.Core.Contracts.dll
+C:\Program Files\SafeExamBrowser\Service\SafeExamBrowser.Core.dll
+C:\Program Files\SafeExamBrowser\Service\SafeExamBrowser.I18n.Contracts.dll
+C:\Program Files\SafeExamBrowser\Service\SafeExamBrowser.Lockdown.Contracts.dll
+C:\Program Files\SafeExamBrowser\Service\SafeExamBrowser.Lockdown.dll
+C:\Program Files\SafeExamBrowser\Service\SafeExamBrowser.Logging.Contracts.dll
+C:\Program Files\SafeExamBrowser\Service\SafeExamBrowser.Logging.dll
+C:\Program Files\SafeExamBrowser\Service\SafeExamBrowser.Service.exe
+C:\Program Files\SafeExamBrowser\Service\SafeExamBrowser.Settings.dll
+C:\Users\rusty\AppData\Local\SafeExamBrowser\Logs\2026-07-21_20h46m25s_Runtime.log
+C:\WINDOWS\SYSTEM32\System32\drivers\dxgkrnl.sys
+C:\WINDOWS\System32\DriverStore\en\acpi.inf_loc
+C:\WINDOWS\System32\DriverStore\en\basicdisplay.inf_loc
+C:\WINDOWS\System32\DriverStore\en\basicrender.inf_loc
+C:\WINDOWS\System32\DriverStore\en\compositebus.inf_loc
+C:\WINDOWS\System32\DriverStore\en\hdaudbus.inf_loc
+C:\WINDOWS\System32\DriverStore\en\machine.inf_loc
+C:\WINDOWS\System32\DriverStore\en\monitor.inf_loc
+C:\WINDOWS\System32\DriverStore\en\mshdc.inf_loc
+C:\WINDOWS\System32\DriverStore\en\mssmbios.inf_loc
+C:\WINDOWS\System32\DriverStore\en\ndisvirtualbus.inf_loc
+C:\WINDOWS\System32\DriverStore\en\oem13.inf_loc
+C:\WINDOWS\System32\DriverStore\en\oem2.inf_loc
+C:\WINDOWS\System32\DriverStore\en\oem3.inf_loc
+C:\WINDOWS\System32\DriverStore\en\pci.inf_loc
+C:\WINDOWS\System32\DriverStore\en\rdpbus.inf_loc
+C:\WINDOWS\System32\DriverStore\en\swenum.inf_loc
+C:\WINDOWS\System32\DriverStore\en\umbus.inf_loc
+C:\WINDOWS\System32\DriverStore\en\usbhub3.inf_loc
+C:\WINDOWS\System32\DriverStore\en\usbxhci.inf_loc
+C:\WINDOWS\System32\DriverStore\en\vdrvroot.inf_loc
+C:\WINDOWS\System32\DriverStore\en\volmgr.inf_loc
+C:\WINDOWS\System32\DriverStore\en\wvid.inf_loc
+C:\WINDOWS\System32\drivers\en\dxgkrnl.sys.mui
+C:\WINDOWS\system\System32\drivers\dxgkrnl.sys
+C:\Windows\Fonts\segoeui.ttf
+C:\Windows\Fonts\segoeuib.ttf
+C:\Windows\INF
+C:\Windows\INF\acpi.PNF
+C:\Windows\INF\acpi.inf
+C:\Windows\INF\basicdisplay.PNF
+C:\Windows\INF\basicdisplay.inf
+C:\Windows\INF\basicrender.PNF
+C:\Windows\INF\basicrender.inf
+C:\Windows\INF\compositebus.PNF
+C:\Windows\INF\compositebus.inf
+C:\Windows\INF\hdaudbus.PNF
+C:\Windows\INF\hdaudbus.inf
+C:\Windows\INF\machine.PNF
+C:\Windows\INF\machine.inf
+C:\Windows\INF\monitor.PNF
+C:\Windows\INF\monitor.inf
+C:\Windows\INF\mshdc.PNF
+C:\Windows\INF\mshdc.inf
+C:\Windows\INF\mssmbios.PNF
+C:\Windows\INF\mssmbios.inf
+C:\Windows\INF\ndisvirtualbus.PNF
+C:\Windows\INF\ndisvirtualbus.inf
+C:\Windows\INF\oem13.PNF
+C:\Windows\INF\oem13.inf
+C:\Windows\INF\oem2.PNF
+C:\Windows\INF\oem2.inf
+C:\Windows\INF\oem3.PNF
+C:\Windows\INF\oem3.inf
+C:\Windows\INF\pci.PNF
+C:\Windows\INF\pci.inf
+C:\Windows\INF\rdpbus.PNF
+C:\Windows\INF\rdpbus.inf
+C:\Windows\INF\swenum.PNF
+C:\Windows\INF\swenum.inf
+C:\Windows\INF\umbus.PNF
+C:\Windows\INF\umbus.inf
+C:\Windows\INF\usbhub3.PNF
+C:\Windows\INF\usbhub3.inf
+C:\Windows\INF\usbxhci.PNF
+C:\Windows\INF\usbxhci.inf
+C:\Windows\INF\vdrvroot.PNF
+C:\Windows\INF\vdrvroot.inf
+C:\Windows\INF\volmgr.PNF
+C:\Windows\INF\volmgr.inf
+C:\Windows\INF\wvid.PNF
+C:\Windows\INF\wvid.inf
+C:\Windows\System32\DriverStore\en-GB\acpi.inf_loc
+C:\Windows\System32\DriverStore\en-GB\basicdisplay.inf_loc
+C:\Windows\System32\DriverStore\en-GB\basicrender.inf_loc
+C:\Windows\System32\DriverStore\en-GB\compositebus.inf_loc
+C:\Windows\System32\DriverStore\en-GB\hdaudbus.inf_loc
+C:\Windows\System32\DriverStore\en-GB\machine.inf_loc
+C:\Windows\System32\DriverStore\en-GB\monitor.inf_loc
+C:\Windows\System32\DriverStore\en-GB\mshdc.inf_loc
+C:\Windows\System32\DriverStore\en-GB\mssmbios.inf_loc
+C:\Windows\System32\DriverStore\en-GB\ndisvirtualbus.inf_loc
+C:\Windows\System32\DriverStore\en-GB\oem13.inf_loc
+C:\Windows\System32\DriverStore\en-GB\oem2.inf_loc
+C:\Windows\System32\DriverStore\en-GB\oem3.inf_loc
+C:\Windows\System32\DriverStore\en-GB\pci.inf_loc
+C:\Windows\System32\DriverStore\en-GB\rdpbus.inf_loc
+C:\Windows\System32\DriverStore\en-GB\swenum.inf_loc
+C:\Windows\System32\DriverStore\en-GB\umbus.inf_loc
+C:\Windows\System32\DriverStore\en-GB\usbhub3.inf_loc
+C:\Windows\System32\DriverStore\en-GB\usbxhci.inf_loc
+C:\Windows\System32\DriverStore\en-GB\vdrvroot.inf_loc
+C:\Windows\System32\DriverStore\en-GB\volmgr.inf_loc
+C:\Windows\System32\DriverStore\en-GB\wvid.inf_loc
+C:\Windows\System32\DriverStore\en-US
+C:\Windows\System32\DriverStore\en-US\BasicRender.inf_loc
+C:\Windows\System32\DriverStore\en-US\CompositeBus.inf_loc
+C:\Windows\System32\DriverStore\en-US\NdisVirtualBus.inf_loc
+C:\Windows\System32\DriverStore\en-US\acpi.inf_loc
+C:\Windows\System32\DriverStore\en-US\basicdisplay.inf_loc
+C:\Windows\System32\DriverStore\en-US\basicrender.inf_loc
+C:\Windows\System32\DriverStore\en-US\compositebus.inf_loc
+C:\Windows\System32\DriverStore\en-US\hdaudbus.inf_loc
+C:\Windows\System32\DriverStore\en-US\machine.inf_loc
+C:\Windows\System32\DriverStore\en-US\monitor.inf_loc
+C:\Windows\System32\DriverStore\en-US\mshdc.inf_loc
+C:\Windows\System32\DriverStore\en-US\mssmbios.inf_loc
+C:\Windows\System32\DriverStore\en-US\ndisvirtualbus.inf_loc
+C:\Windows\System32\DriverStore\en-US\oem13.inf_loc
+C:\Windows\System32\DriverStore\en-US\oem2.inf_loc
+C:\Windows\System32\DriverStore\en-US\oem3.inf_loc
+C:\Windows\System32\DriverStore\en-US\pci.inf_loc
+C:\Windows\System32\DriverStore\en-US\rdpbus.inf_loc
+C:\Windows\System32\DriverStore\en-US\swenum.inf_loc
+C:\Windows\System32\DriverStore\en-US\umbus.inf_loc
+C:\Windows\System32\DriverStore\en-US\usbhub3.inf_loc
+C:\Windows\System32\DriverStore\en-US\usbxhci.inf_loc
+C:\Windows\System32\DriverStore\en-US\vdrvroot.inf_loc
+C:\Windows\System32\DriverStore\en-US\volmgr.inf_loc
+C:\Windows\System32\DriverStore\en-US\wvid.inf_loc
+C:\Windows\System32\cfgmgr32.dll
+C:\Windows\System32\devobj.dll
+C:\Windows\System32\drivers\dxgkrnl.sys
+C:\Windows\System32\drivers\en-GB\dxgkrnl.sys.mui
+C:\Windows\System32\drivers\en-US\dxgkrnl.sys.mui
+HKCR\CLSID\{4590F811-1D3A-11D0-891F-00AA004B2E24}\InprocServer32
+HKCR\CLSID\{4590F811-1D3A-11D0-891F-00AA004B2E24}\InprocServer32\(Default)
+HKCU
+HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\TaskFlow\DeviceCache
+HKCU\Software\Classes
+HKCU\Software\Classes\CLSID\{4590F811-1D3A-11D0-891F-00AA004B2E24}\InprocServer32
+HKLM
+HKLM\HARDWARE\DESCRIPTION\System\BIOS
+HKLM\HARDWARE\DESCRIPTION\System\BIOS\SystemManufacturer
+HKLM\HARDWARE\DESCRIPTION\System\BIOS\SystemProductName
+HKLM\HARDWARE\DEVICEMAP\SERIALCOMM
+HKLM\Hardware\DeviceMap\SERIALCOMM
+HKLM\SOFTWARE\Microsoft\AMSI\Providers
+HKLM\SOFTWARE\Microsoft\AMSI\Providers2
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProductId
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\MMDevices\Audio\Render
+HKLM\SYSTEM\CurrentControlSet\Control\DeviceClasses\{DF576976-569D-4672-95A0-F57E4EA0B210}
+HKLM\SYSTEM\CurrentControlSet\Control\WMI\Restrictions
+HKLM\SYSTEM\CurrentControlSet\Enum\HDAUDIO
+HKLM\SYSTEM\CurrentControlSet\Enum\PCI
+HKLM\SYSTEM\CurrentControlSet\Enum\USB
+HKLM\SYSTEM\Setup
+HKLM\SYSTEM\Setup\PnpSetupInProgress
+HKLM\SYSTEM\Setup\SystemSetupInProgress
+HKLM\Software\Microsoft\AMSI\Providers
+HKLM\Software\Microsoft\AMSI\Providers2
+HKLM\Software\Microsoft\LanguageOverlay\OverlayPackages\en
+HKLM\Software\Microsoft\LanguageOverlay\OverlayPackages\en-GB
+HKLM\Software\Microsoft\LanguageOverlay\OverlayPackages\en-US
+HKLM\Software\Microsoft\Windows NT\CurrentVersion
+HKLM\Software\Policies\Microsoft\System\DNSClient
+HKLM\System\CurrentControlSet\Control\AppID\Configuration\SMARTLOCKER
+HKLM\System\CurrentControlSet\Control\AppID\Configuration\SMARTLOCKER\DISABLED
+HKLM\System\CurrentControlSet\Control\AppID\Configuration\SMARTLOCKER\ENABLED
+HKLM\System\CurrentControlSet\Control\DeviceClasses\{DF576976-569D-4672-95A0-F57E4EA0B210}
+HKLM\System\CurrentControlSet\Control\Srp\GP
+HKLM\System\CurrentControlSet\Control\Srp\GP\
+HKLM\System\CurrentControlSet\Control\Srp\Gp
+HKLM\System\CurrentControlSet\Control\Srp\Gp\RuleCount
+HKLM\System\CurrentControlSet\Control\WMI\Restrictions
+HKLM\System\CurrentControlSet\Enum\ACPI\ACPI0010\2&DABA3FF&0
+HKLM\System\CurrentControlSet\Enum\ACPI\ACPI0010\2&daba3ff&0
+HKLM\System\CurrentControlSet\Enum\ACPI\ACPI0010\2&daba3ff&0\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ACPI\ACPI0010\2&daba3ff&0\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\FIXEDBUTTON\2&DABA3FF&0
+HKLM\System\CurrentControlSet\Enum\ACPI\FixedButton\2&daba3ff&0
+HKLM\System\CurrentControlSet\Enum\ACPI\FixedButton\2&daba3ff&0\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ACPI\FixedButton\2&daba3ff&0\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_140_-_11TH_GEN_INTEL(R)_CORE(TM)_I5-1135G7_@_2.40GHZ\_0
+HKLM\System\CurrentControlSet\Enum\ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_140_-_11TH_GEN_INTEL(R)_CORE(TM)_I5-1135G7_@_2.40GHZ\_1
+HKLM\System\CurrentControlSet\Enum\ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_140_-_11TH_GEN_INTEL(R)_CORE(TM)_I5-1135G7_@_2.40GHZ\_2
+HKLM\System\CurrentControlSet\Enum\ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_140_-_11TH_GEN_INTEL(R)_CORE(TM)_I5-1135G7_@_2.40GHZ\_3
+HKLM\System\CurrentControlSet\Enum\ACPI\GenuineIntel_-_Intel64_Family_6_Model_140_-_11th_Gen_Intel(R)_Core(TM)_i5-1135G7_@_2.40GHz\_0
+HKLM\System\CurrentControlSet\Enum\ACPI\GenuineIntel_-_Intel64_Family_6_Model_140_-_11th_Gen_Intel(R)_Core(TM)_i5-1135G7_@_2.40GHz\_0\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\GenuineIntel_-_Intel64_Family_6_Model_140_-_11th_Gen_Intel(R)_Core(TM)_i5-1135G7_@_2.40GHz\_1
+HKLM\System\CurrentControlSet\Enum\ACPI\GenuineIntel_-_Intel64_Family_6_Model_140_-_11th_Gen_Intel(R)_Core(TM)_i5-1135G7_@_2.40GHz\_1\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\GenuineIntel_-_Intel64_Family_6_Model_140_-_11th_Gen_Intel(R)_Core(TM)_i5-1135G7_@_2.40GHz\_2
+HKLM\System\CurrentControlSet\Enum\ACPI\GenuineIntel_-_Intel64_Family_6_Model_140_-_11th_Gen_Intel(R)_Core(TM)_i5-1135G7_@_2.40GHz\_2\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\GenuineIntel_-_Intel64_Family_6_Model_140_-_11th_Gen_Intel(R)_Core(TM)_i5-1135G7_@_2.40GHz\_3
+HKLM\System\CurrentControlSet\Enum\ACPI\GenuineIntel_-_Intel64_Family_6_Model_140_-_11th_Gen_Intel(R)_Core(TM)_i5-1135G7_@_2.40GHz\_3\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\MSFT0101\1
+HKLM\System\CurrentControlSet\Enum\ACPI\MSFT0101\1\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0303\4&22F5829E&0
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0303\4&22f5829e&0
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0303\4&22f5829e&0\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0501\1
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0501\1\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\CPU_HOTPLUG_RESOURCES
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\CPU_Hotplug_resources
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\CPU_Hotplug_resources\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\CPU_Hotplug_resources\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\GPE0_RESOURCES
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\GPE0_resources
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\GPE0_resources\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\GPE0_resources\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\PCI_HOTPLUG_RESOURCES
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\PCI_Hotplug_resources
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\PCI_Hotplug_resources\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\PCI_Hotplug_resources\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\SMI_RESOURCES
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\SMI_resources
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\SMI_resources\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A06\SMI_resources\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A08\0
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A08\0\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0A08\0\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0B00\4&22F5829E&0
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0B00\4&22f5829e&0
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0B00\4&22f5829e&0\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0B00\4&22f5829e&0\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0C01\2&DABA3FF&0
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0C01\2&daba3ff&0
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0C01\2&daba3ff&0\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0C01\2&daba3ff&0\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0F13\4&22F5829E&0
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0F13\4&22f5829e&0
+HKLM\System\CurrentControlSet\Enum\ACPI\PNP0F13\4&22f5829e&0\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI\QEMU0002\3&11583659&0
+HKLM\System\CurrentControlSet\Enum\ACPI\QEMU0002\3&11583659&0\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ACPI\QEMU0002\3&11583659&0\HardwareID
+HKLM\System\CurrentControlSet\Enum\ACPI_HAL\PNP0C08\0
+HKLM\System\CurrentControlSet\Enum\ACPI_HAL\PNP0C08\0\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ACPI_HAL\PNP0C08\0\HardwareID
+HKLM\System\CurrentControlSet\Enum\DISPLAY\RHT1234\4&1B0E5CB1&0&UID0
+HKLM\System\CurrentControlSet\Enum\DISPLAY\RHT1234\4&1B0E5CB1&0&UID0\Device Parameters
+HKLM\System\CurrentControlSet\Enum\DISPLAY\RHT1234\4&1b0e5cb1&0&UID0
+HKLM\System\CurrentControlSet\Enum\DISPLAY\RHT1234\4&1b0e5cb1&0&UID0\Device Parameters
+HKLM\System\CurrentControlSet\Enum\DISPLAY\RHT1234\4&1b0e5cb1&0&UID0\Device Parameters\EDID
+HKLM\System\CurrentControlSet\Enum\DISPLAY\RHT1234\4&1b0e5cb1&0&UID0\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\DISPLAY\RHT1234\4&1b0e5cb1&0&UID0\FriendlyName
+HKLM\System\CurrentControlSet\Enum\DISPLAY\RHT1234\4&1b0e5cb1&0&UID0\HardwareID
+HKLM\System\CurrentControlSet\Enum\HDAUDIO
+HKLM\System\CurrentControlSet\Enum\HDAUDIO\FUNC_01&VEN_1AF4&DEV_0022&SUBSYS_1AF40022&REV_1001
+HKLM\System\CurrentControlSet\Enum\HDAUDIO\FUNC_01&VEN_1AF4&DEV_0022&SUBSYS_1AF40022&REV_1001\4&C5E0874&0&0001
+HKLM\System\CurrentControlSet\Enum\HDAUDIO\FUNC_01&VEN_1AF4&DEV_0022&SUBSYS_1AF40022&REV_1001\4&c5e0874&0&0001
+HKLM\System\CurrentControlSet\Enum\HDAUDIO\FUNC_01&VEN_1AF4&DEV_0022&SUBSYS_1AF40022&REV_1001\4&c5e0874&0&0001\HardwareID
+HKLM\System\CurrentControlSet\Enum\HID\VID_0627&PID_0001\7&143C9699&0&0000
+HKLM\System\CurrentControlSet\Enum\HID\VID_0627&PID_0001\7&143c9699&0&0000
+HKLM\System\CurrentControlSet\Enum\HID\VID_0627&PID_0001\7&143c9699&0&0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\HTREE\ROOT\0
+HKLM\System\CurrentControlSet\Enum\HTREE\ROOT\0\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1043&SUBSYS_11001AF4&REV_01
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1043&SUBSYS_11001AF4&REV_01\4&28AA03CD&0&0012
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1043&SUBSYS_11001AF4&REV_01\4&28aa03cd&0&0012
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1043&SUBSYS_11001AF4&REV_01\4&28aa03cd&0&0012\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1043&SUBSYS_11001AF4&REV_01\4&28aa03cd&0&0012\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1045&SUBSYS_11001AF4&REV_01
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1045&SUBSYS_11001AF4&REV_01\4&3B63B472&0&0013
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1045&SUBSYS_11001AF4&REV_01\4&3b63b472&0&0013
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1045&SUBSYS_11001AF4&REV_01\4&3b63b472&0&0013\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1045&SUBSYS_11001AF4&REV_01\4&3b63b472&0&0013\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1050&SUBSYS_11001AF4&REV_01
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1050&SUBSYS_11001AF4&REV_01\3&11583659&0&08
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1050&SUBSYS_11001AF4&REV_01\3&11583659&0&08\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1050&SUBSYS_11001AF4&REV_01\3&11583659&0&08\Properties\{a45c254e-df1c-4efd-8020-67d146a850e0}\0025
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1AF4&DEV_1050&SUBSYS_11001AF4&REV_01\3&11583659&0&08\Properties\{a45c254e-df1c-4efd-8020-67d146a850e0}\0025\(Default)
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&10
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&10\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&10\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&11
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&11\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&11\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&12
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&12\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&12\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&13
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&13\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&13\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&14
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&14\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&14\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&15
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&15\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&15\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&16
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&16\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&16\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&17
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&17\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&17\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&18
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&18\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&18\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&19
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&19\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&19\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&1A
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&1A\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&1A\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&1B
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&1B\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&1B\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&1C
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&1C\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&1C\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&1D
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&1D\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000C&SUBSYS_00001B36&REV_00\3&11583659&0&1D\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000D&SUBSYS_11001AF4&REV_01
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000D&SUBSYS_11001AF4&REV_01\4&15F05328&0&0011
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000D&SUBSYS_11001AF4&REV_01\4&15f05328&0&0011
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000D&SUBSYS_11001AF4&REV_01\4&15f05328&0&0011\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_000D&SUBSYS_11001AF4&REV_01\4&15f05328&0&0011\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_0100&SUBSYS_11001AF4&REV_05
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_0100&SUBSYS_11001AF4&REV_05\3&11583659&0&08
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_1B36&DEV_0100&SUBSYS_11001AF4&REV_05\3&11583659&0&08\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_10D3&SUBSYS_00008086&REV_00
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_10D3&SUBSYS_00008086&REV_00\4&336A283&0&0010
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_10D3&SUBSYS_00008086&REV_00\4&336a283&0&0010
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_10D3&SUBSYS_00008086&REV_00\4&336a283&0&0010\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_2918&SUBSYS_11001AF4&REV_02
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_2918&SUBSYS_11001AF4&REV_02\3&11583659&0&F8
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_2918&SUBSYS_11001AF4&REV_02\3&11583659&0&F8\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_2918&SUBSYS_11001AF4&REV_02\3&11583659&0&F8\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_2922&SUBSYS_11001AF4&REV_02
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_2922&SUBSYS_11001AF4&REV_02\3&11583659&0&FA
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_2922&SUBSYS_11001AF4&REV_02\3&11583659&0&FA\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_2922&SUBSYS_11001AF4&REV_02\3&11583659&0&FA\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_2930&SUBSYS_11001AF4&REV_02
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_2930&SUBSYS_11001AF4&REV_02\3&11583659&0&FB
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_2930&SUBSYS_11001AF4&REV_02\3&11583659&0&FB\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_2930&SUBSYS_11001AF4&REV_02\3&11583659&0&FB\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_293E&SUBSYS_11001AF4&REV_03
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_293E&SUBSYS_11001AF4&REV_03\3&11583659&0&D8
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_293E&SUBSYS_11001AF4&REV_03\3&11583659&0&D8\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_293E&SUBSYS_11001AF4&REV_03\3&11583659&0&D8\HardwareID
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_29C0&SUBSYS_11001AF4&REV_00
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_29C0&SUBSYS_11001AF4&REV_00\3&11583659&0&00
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_29C0&SUBSYS_11001AF4&REV_00\3&11583659&0&00\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\PCI\VEN_8086&DEV_29C0&SUBSYS_11001AF4&REV_00\3&11583659&0&00\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\ACPI_HAL\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\ACPI_HAL\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\BASICDISPLAY\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\BASICRENDER\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\BasicDisplay\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\BasicDisplay\0000\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ROOT\BasicDisplay\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\BasicRender\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\BasicRender\0000\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ROOT\BasicRender\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\COMPOSITEBUS\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\CompositeBus\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\CompositeBus\0000\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ROOT\CompositeBus\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\KDNIC\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\KDNIC\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\MSSMBIOS\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\NDISVIRTUALBUS\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\NdisVirtualBus\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\NdisVirtualBus\0000\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ROOT\NdisVirtualBus\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\RDPBUS\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\RDPBUS\0000\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ROOT\RDPBUS\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\SPACEPORT\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\SYSTEM\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\SYSTEM\0000\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ROOT\SYSTEM\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\UMBUS\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\UMBUS\0000\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ROOT\UMBUS\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\VDRVROOT\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\VID\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\VID\0000\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ROOT\VID\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\VOLMGR\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\mssmbios\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\mssmbios\0000\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ROOT\mssmbios\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\spaceport\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\spaceport\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\vdrvroot\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\vdrvroot\0000\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ROOT\vdrvroot\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\ROOT\volmgr\0000
+HKLM\System\CurrentControlSet\Enum\ROOT\volmgr\0000\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\ROOT\volmgr\0000\HardwareID
+HKLM\System\CurrentControlSet\Enum\SCSI\DISK&VEN_QEMU&PROD_HARDDISK\4&35424867&0&000000
+HKLM\System\CurrentControlSet\Enum\SCSI\Disk&Ven_QEMU&Prod_HARDDISK\4&35424867&0&000000
+HKLM\System\CurrentControlSet\Enum\SCSI\Disk&Ven_QEMU&Prod_HARDDISK\4&35424867&0&000000\HardwareID
+HKLM\System\CurrentControlSet\Enum\STORAGE\VOLUME\{F07755E1-8487-11F1-AC04-806E6F6E6963}#0000000000100000
+HKLM\System\CurrentControlSet\Enum\STORAGE\VOLUME\{F07755E1-8487-11F1-AC04-806E6F6E6963}#000000000C900000
+HKLM\System\CurrentControlSet\Enum\STORAGE\VOLUME\{F07755E1-8487-11F1-AC04-806E6F6E6963}#000000000D900000
+HKLM\System\CurrentControlSet\Enum\STORAGE\VOLUME\{F07755E1-8487-11F1-AC04-806E6F6E6963}#00000013CEB00000
+HKLM\System\CurrentControlSet\Enum\STORAGE\Volume\{f07755e1-8487-11f1-ac04-806e6f6e6963}#0000000000100000
+HKLM\System\CurrentControlSet\Enum\STORAGE\Volume\{f07755e1-8487-11f1-ac04-806e6f6e6963}#0000000000100000\HardwareID
+HKLM\System\CurrentControlSet\Enum\STORAGE\Volume\{f07755e1-8487-11f1-ac04-806e6f6e6963}#000000000C900000
+HKLM\System\CurrentControlSet\Enum\STORAGE\Volume\{f07755e1-8487-11f1-ac04-806e6f6e6963}#000000000C900000\HardwareID
+HKLM\System\CurrentControlSet\Enum\STORAGE\Volume\{f07755e1-8487-11f1-ac04-806e6f6e6963}#000000000D900000
+HKLM\System\CurrentControlSet\Enum\STORAGE\Volume\{f07755e1-8487-11f1-ac04-806e6f6e6963}#000000000D900000\HardwareID
+HKLM\System\CurrentControlSet\Enum\STORAGE\Volume\{f07755e1-8487-11f1-ac04-806e6f6e6963}#00000013CEB00000
+HKLM\System\CurrentControlSet\Enum\STORAGE\Volume\{f07755e1-8487-11f1-ac04-806e6f6e6963}#00000013CEB00000\HardwareID
+HKLM\System\CurrentControlSet\Enum\SWD\COMPUTER\MFG_QEMU&PROD_STANDARD_PC_(Q35_+_ICH9__2009)
+HKLM\System\CurrentControlSet\Enum\SWD\COMPUTER\MFG_QEMU&PROD_Standard_PC_(Q35_+_ICH9__2009)
+HKLM\System\CurrentControlSet\Enum\SWD\COMPUTER\MFG_QEMU&PROD_Standard_PC_(Q35_+_ICH9__2009)\HardwareID
+HKLM\System\CurrentControlSet\Enum\SWD\DRIVERENUM\{96BEDF2C-18CB-4A15-B821-5E95ED0FEA61}#VOCAEFFECTPACK&1&32822364&0
+HKLM\System\CurrentControlSet\Enum\SWD\DRIVERENUM\{96bedf2c-18cb-4a15-b821-5e95ed0fea61}#VocaEffectPack&1&32822364&0
+HKLM\System\CurrentControlSet\Enum\SWD\DRIVERENUM\{96bedf2c-18cb-4a15-b821-5e95ed0fea61}#VocaEffectPack&1&32822364&0\HardwareID
+HKLM\System\CurrentControlSet\Enum\SWD\MMDEVAPI\MICROSOFTGSWAVETABLESYNTH
+HKLM\System\CurrentControlSet\Enum\SWD\MMDEVAPI\MicrosoftGSWavetableSynth
+HKLM\System\CurrentControlSet\Enum\SWD\MMDEVAPI\MicrosoftGSWavetableSynth\HardwareID
+HKLM\System\CurrentControlSet\Enum\SWD\MMDEVAPI\{0.0.0.00000000}.{080A48AD-525E-454F-90C7-5DEB1FC3A2D4}
+HKLM\System\CurrentControlSet\Enum\SWD\MMDEVAPI\{0.0.0.00000000}.{080a48ad-525e-454f-90c7-5deb1fc3a2d4}
+HKLM\System\CurrentControlSet\Enum\SWD\MMDEVAPI\{0.0.0.00000000}.{080a48ad-525e-454f-90c7-5deb1fc3a2d4}\HardwareID
+HKLM\System\CurrentControlSet\Enum\SWD\MMDEVAPI\{0.0.1.00000000}.{76500A6B-F762-4F2B-9902-D96B7AEF816E}
+HKLM\System\CurrentControlSet\Enum\SWD\MMDEVAPI\{0.0.1.00000000}.{76500a6b-f762-4f2b-9902-d96b7aef816e}
+HKLM\System\CurrentControlSet\Enum\SWD\MMDEVAPI\{0.0.1.00000000}.{76500a6b-f762-4f2b-9902-d96b7aef816e}\HardwareID
+HKLM\System\CurrentControlSet\Enum\SWD\PRINTENUM\PRINTQUEUES
+HKLM\System\CurrentControlSet\Enum\SWD\PRINTENUM\PrintQueues
+HKLM\System\CurrentControlSet\Enum\SWD\PRINTENUM\PrintQueues\HardwareID
+HKLM\System\CurrentControlSet\Enum\SWD\PRINTENUM\{F2D3E895-2FB3-4F3D-828D-091E6BE9450F}
+HKLM\System\CurrentControlSet\Enum\SWD\PRINTENUM\{F2D3E895-2FB3-4F3D-828D-091E6BE9450F}\HardwareID
+HKLM\System\CurrentControlSet\Enum\SWD\RADIO\{3DB5895D-CC28-44B3-AD3D-6F01A782B8D2}
+HKLM\System\CurrentControlSet\Enum\SWD\RADIO\{3DB5895D-CC28-44B3-AD3D-6F01A782B8D2}\HardwareID
+HKLM\System\CurrentControlSet\Enum\USB
+HKLM\System\CurrentControlSet\Enum\USB\ROOT_HUB30
+HKLM\System\CurrentControlSet\Enum\USB\ROOT_HUB30\5&1E461E56&0&0
+HKLM\System\CurrentControlSet\Enum\USB\ROOT_HUB30\5&1e461e56&0&0
+HKLM\System\CurrentControlSet\Enum\USB\ROOT_HUB30\5&1e461e56&0&0\DeviceDesc
+HKLM\System\CurrentControlSet\Enum\USB\ROOT_HUB30\5&1e461e56&0&0\HardwareID
+HKLM\System\CurrentControlSet\Enum\USB\VID_0627&PID_0001
+HKLM\System\CurrentControlSet\Enum\USB\VID_0627&PID_0001\28754-0000:00:02.1:00.0-1
+HKLM\System\CurrentControlSet\Enum\USB\VID_0627&PID_0001\28754-0000:00:02.1:00.0-1\HardwareID
+HKLM\System\CurrentControlSet\Enum\{6FDE7547-1B65-48AE-B628-80BE62016026}\VIOSERIALPORT\5&39B81326&0&01
+HKLM\System\CurrentControlSet\Enum\{6FDE7547-1B65-48ae-B628-80BE62016026}\VIOSerialPort\5&39b81326&0&01
+HKLM\System\CurrentControlSet\Enum\{6FDE7547-1B65-48ae-B628-80BE62016026}\VIOSerialPort\5&39b81326&0&01\HardwareID
+HKLM\System\CurrentControlSet\Services\Tcpip\Parameters
+HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\Domain
+HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\Hostname
+HKLM\System\Setup
+HKU
