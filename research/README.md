@@ -1,6 +1,6 @@
 <div align="center">
-    <h1>Safe Exam Browser Research</h1>
-    <h3>VM Detection Bypass Research</h3>
+    <h1>Project EVirt_SEB</h1>
+    <h3>Safe Exam Browser VM Detection Bypass Research</h3>
 </div>
 
 ---
