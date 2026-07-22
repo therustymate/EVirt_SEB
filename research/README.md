@@ -5,7 +5,10 @@
 
 ---
 
-# **Process Execution Flow**
+
+# **Dynamic Reverse Engineering**
+
+## **Process Execution Flow**
 1. Initialize startup procedure
     * Load `system language`
 2. Start communication host
@@ -24,9 +27,6 @@
     * Start ease of access verification
 9. **Validate virtual machine policy**
 10. Continue OR Exit
-
-
-# **Dynamic Reverse Engineering**
 
 The file: *[2026-07-21_20h46m25s_Runtime.log](./dynamic/logs/2026-07-21_20h46m25s_Runtime.log)* suggest that at **20:46:56.551**, the VM validation procedure was started and ended at **20:46:58.012**. Using this information, it is possible to identify which system information SEB queried for VM detection during this procedure. The runtime log can be found in the following folder: `C:\Users\%username%\AppData\Local\SafeExamBrowser\Logs`.
 
