@@ -87,8 +87,215 @@ $ python3 procmon_csv_parser.py -c 5 -f ../research/dynamic/outputs/ProcMon_SEB_
 
 *--- Ended at 2026-07-21 11:28 PM NZD ---*
 
+The file: *[unique_queried_sys_info_items.txt](./dynamic/outputs/unique_queried_sys_info_items.txt)* is the unique items of the system information SEB queried. One of the Windows Registry that SEB queried was `HKLM\HARDWARE\DESCRIPTION\System\BIOS\SystemManufacturer` which is mainly used for VM detection.
 
+*Note: still several noises can be found*
 
+Using [ProcMonParser](https://therustymate.com/ProcMonParser) (browser-based ProcMon .XML parser), it is possible to inspect the stack trace that is recorded:
 
+![Stack Trace of Windows Registry Query](../rsrc/screenshots/Screenshot_20260722_210815.png)
+
+![Stack Trace Detail](../rsrc/screenshots/Screenshot_20260722_211101.png)
+
+The stack trace suggests that the module `seb_x64.dll` have queried the Windows Registry key.
 
 # **Static Reverse Engineering**
+
+![Cutter File Overview](../rsrc/screenshots/Screenshot_20260722_212236.png)
+
+```bash
+$ file seb_x64.dll
+seb_x64.dll: PE32+ executable for MS Windows 6.00 (DLL), x86-64, 12 sections
+```
+
+The module `seb_x64.dll` is protected with the [Themida Protector](https://www.oreans.com/Themida.php).
+
+![Themida Protector](../rsrc/screenshots/Screenshot_20260722_222105.png)
+
+Inspecting the EAT (Export Address Table) allows us to identify the entry point of VM detection function: `IsVirtualMachine`
+
+![IDA Free EAT View](../rsrc/screenshots/Screenshot_20260722_212828.png)
+
+This function is called from the file: *[seb-win-refactoring/SafeExamBrowser.Integrity
+/IntegrityModule.cs](https://github.com/SafeExamBrowser/seb-win-refactoring/blob/7afddaa03087b7d47f55a123b60b0a62c4b9d42e/SafeExamBrowser.Integrity/IntegrityModule.cs#L97)*. 
+
+```cs
+public bool IsVirtualMachine(out string manufacturer, out int probability)
+{
+    var isVirtualMachine = false;
+
+    manufacturer = default;
+    probability = default;
+
+    try
+    {
+        isVirtualMachine = Native.IsVirtualMachine(out var bstr, out probability);
+
+        if (bstr != IntPtr.Zero)
+        {
+            manufacturer = Marshal.PtrToStringBSTR(bstr);
+            Marshal.FreeBSTR(bstr);
+        }
+    }
+    catch (DllNotFoundException)
+    {
+        logger.Warn("Integrity module is not available!");
+    }
+    catch (Exception e)
+    {
+        logger.Error("Unexpected error while attempting to query virtual machine information!", e);
+    }
+
+    return isVirtualMachine;
+}
+```
+
+The function signature of `seb_x64.dll!IsVirtualMachine` is:
+```c
+extern "C" bool __cdecl IsVirtualMachine(
+    BSTR* manufacturer,
+    int* probability
+);
+```
+
+The function `IsVirtualMachine` detects the following virtualization software:
+* Hyper-V
+* KVM
+* QEMU
+* VMware
+* VirtualBox
+
+![IsVirtualMachine Pseudocode](../rsrc/screenshots/Screenshot_20260722_213119.png)
+
+---
+
+After reverse engineering, the recovered code of the function `IsVirtualMachine` is this:
+```c
+
+char IsVirtualMachine(BSTR *manufacturer,int *probability)
+
+{
+    char codeSignatureValid;
+    byte vmProbability;
+    undefined4 randomSeed;
+    uint randomValue;
+    int randomVendorValue;
+    VmContext *vmContext;
+    BSTR manufacturerBstr;
+    VendorList *vendorAllocation;
+    MsvcString *manufacturerStringA;
+    WString32 *wideManufacturer;
+    wchar_t *manufacturerWideBuffer;
+    char isVirtualMachine;
+    int probabilityValue;
+    MsvcString *vendorList;
+    MsvcString *selectedVendor;
+    VmContext detectionContext;
+    VmContext manufacturerContext;
+    VmContext probabilityContext;
+    WString32 manufacturerString;
+    WString32 fallbackManufacturerString;
+    MsvcString emptyVendor;
+    MsvcString selectedVendorCopy;
+    MsvcString manufacturerStorage;
+    MsvcString movedVendor;
+    
+                    /* 0x128150  4  IsVirtualMachine */
+    codeSignatureValid = VerifyCodeSignature();
+    if (codeSignatureValid == '\0') {
+        vendorAllocation = alloc(168);
+        if (vendorAllocation == (VendorList *)0x0) {
+            vendorList = (MsvcString *)0x0;
+        }
+        else {
+            vendorAllocation->count = 5;
+            StringConstruct(vendorAllocation->vendors,"Hyper-V");
+            StringConstruct(vendorAllocation->vendors + 1,"KVM");
+            StringConstruct(vendorAllocation->vendors + 2,"QEMU");
+            StringConstruct(vendorAllocation->vendors + 3,"VMware");
+            StringConstruct(vendorAllocation->vendors + 4,"VirtualBox");
+            vendorList = vendorAllocation->vendors;
+        }
+        randomSeed = thunk_FUN_180393d0c(0);
+        FUN_180393cf4(randomSeed);
+        randomValue = crt_rand();
+        isVirtualMachine =
+             (randomValue & 1 ^ (int)randomValue >> 0x1f) - ((int)randomValue >> 0x1f) == 1;
+        if (!(bool)isVirtualMachine) {
+            selectedVendor = StringConstruct(&emptyVendor,"");
+        }
+        else {
+            randomVendorValue = crt_rand();
+            selectedVendor = StringCopy(&selectedVendorCopy,vendorList + randomVendorValue % 5);
+        }
+        manufacturerStringA = StringMove(&movedVendor,selectedVendor);
+        wideManufacturer = ConvertStringToWString(&fallbackManufacturerString,manufacturerStringA);
+        manufacturerWideBuffer = WStringData(wideManufacturer);
+        manufacturerBstr = (BSTR)(*(code *)0x8000000000000002)(manufacturerWideBuffer);
+        *manufacturer = manufacturerBstr;
+        WStringDestroy(&fallbackManufacturerString);
+        if (!(bool)isVirtualMachine) {
+            StringDestroy(&emptyVendor);
+            probabilityValue = 0;
+        }
+        else {
+            StringDestroy(&selectedVendorCopy);
+            probabilityValue = crt_rand();
+            probabilityValue = probabilityValue % 0x65;
+        }
+        *probability = probabilityValue;
+    }
+    else {
+        vmContext = BuildVmContext(&detectionContext);
+        isVirtualMachine = IsVmDetected(vmContext);
+        vmContext = BuildVmContext(&manufacturerContext);
+        manufacturerStringA = GetVmManufacturerString(&manufacturerStorage,vmContext);
+        wideManufacturer = ConvertStringToWString(&manufacturerString,manufacturerStringA);
+        manufacturerWideBuffer = WStringData(wideManufacturer);
+        manufacturerBstr = (BSTR)(*(code *)0x8000000000000002)(manufacturerWideBuffer);
+        *manufacturer = manufacturerBstr;
+        WStringDestroy(&manufacturerString);
+        vmContext = BuildVmContext(&probabilityContext);
+        vmProbability = GetVmProbability(vmContext);
+        *probability = (uint)vmProbability;
+    }
+    return isVirtualMachine;
+}
+
+
+```
+
+---
+
+The file: *[seb_types.h](./static/header/seb_types.h)* was applied on Ghidra.
+
+```c
+typedef struct MsvcString {
+    union {
+        char inlineBuffer[16];
+        char *heapBuffer;
+    } storage;
+
+    unsigned long long size;
+    unsigned long long capacity;
+} MsvcString;
+
+typedef struct WString32 {
+    union {
+        wchar_t inlineBuffer[8];
+        wchar_t *heapBuffer;
+    } storage;
+
+    unsigned long long size;
+    unsigned long long capacity;
+} WString32;
+
+typedef struct VendorList {
+    unsigned long long count;
+    MsvcString vendors[5];
+} VendorList;
+
+typedef struct VmContext {
+    uint64_t bits[2];
+} VmContext;
+```
