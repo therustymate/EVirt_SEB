@@ -1,2 +1,9 @@
-*.dll
-*.lock
+# Large dynamic-analysis dumps
+research/dynamic/dumps/*.XML
+
+# Reverse-engineering project databases
+*.bndb
+*.i64
+
+# Ghidra project database
+*.rep/
