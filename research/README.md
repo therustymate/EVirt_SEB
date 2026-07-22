@@ -172,6 +172,7 @@ The function `IsVirtualMachine` detects the following virtualization software:
 After reverse engineering, the recovered code of the function `IsVirtualMachine` is this:
 ```c
 
+
 char IsVirtualMachine(BSTR *manufacturer,int *probability)
 
 {
@@ -216,8 +217,8 @@ char IsVirtualMachine(BSTR *manufacturer,int *probability)
             StringConstruct(vendorAllocation->vendors + 4,"VirtualBox");
             vendorList = vendorAllocation->vendors;
         }
-        randomSeed = thunk_FUN_180393d0c(0);
-        FUN_180393cf4(randomSeed);
+        randomSeed = std_time(0);
+        std_srand(randomSeed);
         randomValue = crt_rand();
         isVirtualMachine =
              (randomValue & 1 ^ (int)randomValue >> 0x1f) - ((int)randomValue >> 0x1f) == 1;
