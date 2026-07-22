@@ -171,8 +171,6 @@ The function `IsVirtualMachine` detects the following virtualization software:
 
 After reverse engineering, the recovered code of the function `IsVirtualMachine` is this:
 ```c
-
-
 char IsVirtualMachine(BSTR *manufacturer,int *probability)
 
 {
@@ -219,14 +217,14 @@ char IsVirtualMachine(BSTR *manufacturer,int *probability)
         }
         randomSeed = std_time(0);
         std_srand(randomSeed);
-        randomValue = crt_rand();
+        randomValue = std_rand();
         isVirtualMachine =
              (randomValue & 1 ^ (int)randomValue >> 0x1f) - ((int)randomValue >> 0x1f) == 1;
         if (!(bool)isVirtualMachine) {
             selectedVendor = StringConstruct(&emptyVendor,"");
         }
         else {
-            randomVendorValue = crt_rand();
+            randomVendorValue = std_rand();
             selectedVendor = StringCopy(&selectedVendorCopy,vendorList + randomVendorValue % 5);
         }
         manufacturerStringA = StringMove(&movedVendor,selectedVendor);
@@ -241,7 +239,7 @@ char IsVirtualMachine(BSTR *manufacturer,int *probability)
         }
         else {
             StringDestroy(&selectedVendorCopy);
-            probabilityValue = crt_rand();
+            probabilityValue = std_rand();
             probabilityValue = probabilityValue % 0x65;
         }
         *probability = probabilityValue;
@@ -262,8 +260,6 @@ char IsVirtualMachine(BSTR *manufacturer,int *probability)
     }
     return isVirtualMachine;
 }
-
-
 ```
 
 ---
