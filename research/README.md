@@ -304,98 +304,60 @@ The recovered human-readable C++ code is:
 ```cpp
 char IsVirtualMachine(BSTR* manufacturer, int* probability)
 {
-    const char codeSignatureValid = VerifyCodeSignature();
-
-    if (codeSignatureValid == '\0')
+    if (!VerifyCodeSignature())
     {
-        VendorList* vendorAllocation = alloc(168);
-        MsvcString* vendorList = nullptr;
+        VendorList* vendors = alloc(168);
 
-        if (vendorAllocation != nullptr)
+        if (vendors)
         {
-            vendorAllocation->count = 5;
-
-            StringConstruct(&vendorAllocation->vendors[0], "Hyper-V");
-            StringConstruct(&vendorAllocation->vendors[1], "KVM");
-            StringConstruct(&vendorAllocation->vendors[2], "QEMU");
-            StringConstruct(&vendorAllocation->vendors[3], "VMware");
-            StringConstruct(&vendorAllocation->vendors[4], "VirtualBox");
-
-            vendorList = vendorAllocation->vendors;
+            vendors->count = 5;
+            StringConstruct(&vendors->vendors[0], "Hyper-V");
+            StringConstruct(&vendors->vendors[1], "KVM");
+            StringConstruct(&vendors->vendors[2], "QEMU");
+            StringConstruct(&vendors->vendors[3], "VMware");
+            StringConstruct(&vendors->vendors[4], "VirtualBox");
         }
 
-        std::srand(static_cast<unsigned int>(std::time(nullptr)));
+        std::srand(std::time(nullptr));
 
-        const unsigned int randomValue =
-            static_cast<unsigned int>(std::rand());
-
-        const char isVirtualMachine =
-            (((randomValue & 1U) ^
-              (static_cast<int>(randomValue) >> 31)) -
-             (static_cast<int>(randomValue) >> 31)) == 1;
+        char isVirtualMachine = std::rand() % 2;
 
         MsvcString emptyVendor;
-        MsvcString selectedVendorCopy;
+        MsvcString selectedVendor;
         MsvcString movedVendor;
 
-        MsvcString* selectedVendor = nullptr;
+        MsvcString* vendor;
 
-        if (!isVirtualMachine)
-        {
-            selectedVendor =
-                StringConstruct(&emptyVendor, "");
-        }
+        if (isVirtualMachine)
+            vendor = StringCopy(&selectedVendor, &vendors->vendors[std::rand() % 5]);
         else
-        {
-            const int randomVendorValue = std::rand();
-
-            selectedVendor =
-                StringCopy(
-                    &selectedVendorCopy,
-                    vendorList + (randomVendorValue % 5));
-        }
+            vendor = StringConstruct(&emptyVendor, "");
 
         MsvcString* manufacturerString =
-            StringMove(&movedVendor, selectedVendor);
+            StringMove(&movedVendor, vendor);
 
-        WString32 fallbackManufacturerString;
+        WString32 wideString;
 
-        WString32* wideManufacturer =
-            ConvertStringToWString(
-                &fallbackManufacturerString,
-                manufacturerString);
+        wchar_t* buffer = WStringData(
+            ConvertStringToWString(&wideString, manufacturerString));
 
-        wchar_t* manufacturerWideBuffer =
-            WStringData(wideManufacturer);
-
-        /*
-         * Failed Recovery
-         *
-         * Decompiled:
-         * (*(code*)0x8000000000000002)(manufacturerWideBuffer)
-         */
-        using UnknownBstrFunction = BSTR (*)(wchar_t*);
-
-        auto unknownBstrFunction =
-            reinterpret_cast<UnknownBstrFunction>(
-                0x8000000000000002ULL);
-
+        // Failed Recovery:
+        // (*(code*)0x8000000000000002)(buffer)
         *manufacturer =
-            unknownBstrFunction(manufacturerWideBuffer);
+            reinterpret_cast<BSTR (*)(wchar_t*)>(
+                0x8000000000000002)(buffer);
 
-        WStringDestroy(&fallbackManufacturerString);
+        WStringDestroy(&wideString);
 
-        if (!isVirtualMachine)
+        if (isVirtualMachine)
+        {
+            StringDestroy(&selectedVendor);
+            *probability = std::rand() % 101;
+        }
+        else
         {
             StringDestroy(&emptyVendor);
             *probability = 0;
-        }
-        else
-        {
-            StringDestroy(&selectedVendorCopy);
-
-            *probability =
-                std::rand() % 101;
         }
 
         return isVirtualMachine;
@@ -405,57 +367,30 @@ char IsVirtualMachine(BSTR* manufacturer, int* probability)
     VmContext manufacturerContext;
     VmContext probabilityContext;
 
-    VmContext* vmContext =
-        BuildVmContext(&detectionContext);
+    char isVirtualMachine =
+        IsVmDetected(BuildVmContext(&detectionContext));
 
-    const char isVirtualMachine =
-        IsVmDetected(vmContext);
+    MsvcString manufacturerString;
+    WString32 wideString;
 
-    vmContext =
-        BuildVmContext(&manufacturerContext);
-
-    MsvcString manufacturerStorage;
-
-    MsvcString* manufacturerString =
-        GetVmManufacturerString(
-            &manufacturerStorage,
-            vmContext);
-
-    WString32 manufacturerStringWide;
-
-    WString32* wideManufacturer =
+    wchar_t* buffer = WStringData(
         ConvertStringToWString(
-            &manufacturerStringWide,
-            manufacturerString);
+            &wideString,
+            GetVmManufacturerString(
+                &manufacturerString,
+                BuildVmContext(&manufacturerContext))));
 
-    wchar_t* manufacturerWideBuffer =
-        WStringData(wideManufacturer);
-
-    /*
-     * Failed Recovery
-     *
-     * Decompiled:
-     * (*(code*)0x8000000000000002)(manufacturerWideBuffer)
-     */
-    using UnknownBstrFunction = BSTR (*)(wchar_t*);
-
-    auto unknownBstrFunction =
-        reinterpret_cast<UnknownBstrFunction>(
-            0x8000000000000002ULL);
-
+    // Failed Recovery:
+    // (*(code*)0x8000000000000002)(buffer)
     *manufacturer =
-        unknownBstrFunction(manufacturerWideBuffer);
+        reinterpret_cast<BSTR (*)(wchar_t*)>(
+            0x8000000000000002)(buffer);
 
-    WStringDestroy(&manufacturerStringWide);
-
-    vmContext =
-        BuildVmContext(&probabilityContext);
-
-    const unsigned char vmProbability =
-        GetVmProbability(vmContext);
+    WStringDestroy(&wideString);
 
     *probability =
-        static_cast<int>(vmProbability);
+        GetVmProbability(
+            BuildVmContext(&probabilityContext));
 
     return isVirtualMachine;
 }
