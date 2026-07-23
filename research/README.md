@@ -302,7 +302,7 @@ typedef struct VmContext {
 The recovered human-readable C++ code is:
 
 ```cpp
-char IsVirtualMachine(BSTR* manufacturer, int* probability)
+bool IsVirtualMachine(BSTR* manufacturer, int* probability)
 {
     if (!VerifyCodeSignature())
     {
@@ -320,20 +320,23 @@ char IsVirtualMachine(BSTR* manufacturer, int* probability)
 
         std::srand(std::time(nullptr));
 
-        char isVirtualMachine = std::rand() % 2;
+        bool isVirtualMachine = (std::rand() % 2) != 0;
 
         std::string vendor;
 
         if (isVirtualMachine)
+        {
             vendor = vendors->vendors[std::rand() % 5];
+        }
 
         std::wstring wideVendor(vendor.begin(), vendor.end());
 
         // Failed Recovery:
-        // (*(code*)0x8000000000000002)(wideVendor.c_str())
+        // likely SysAllocString(wideVendor.c_str())
         *manufacturer =
             reinterpret_cast<BSTR (*)(const wchar_t*)>(
-                0x8000000000000002)(wideVendor.c_str());
+                0x8000000000000002
+            )(wideVendor.c_str());
 
         *probability =
             isVirtualMachine ? std::rand() % 101 : 0;
@@ -345,26 +348,32 @@ char IsVirtualMachine(BSTR* manufacturer, int* probability)
     VmContext manufacturerContext;
     VmContext probabilityContext;
 
-    char isVirtualMachine =
-        IsVmDetected(BuildVmContext(&detectionContext));
+    bool isVirtualMachine =
+        IsVmDetected(
+            BuildVmContext(&detectionContext)
+        );
 
     std::string manufacturerString =
         GetVmManufacturerString(
-            BuildVmContext(&manufacturerContext));
+            BuildVmContext(&manufacturerContext)
+        );
 
     std::wstring wideManufacturer(
         manufacturerString.begin(),
-        manufacturerString.end());
+        manufacturerString.end()
+    );
 
     // Failed Recovery:
-    // (*(code*)0x8000000000000002)(wideManufacturer.c_str())
+    // likely SysAllocString(wideManufacturer.c_str())
     *manufacturer =
         reinterpret_cast<BSTR (*)(const wchar_t*)>(
-            0x8000000000000002)(wideManufacturer.c_str());
+            0x8000000000000002
+        )(wideManufacturer.c_str());
 
     *probability =
         GetVmProbability(
-            BuildVmContext(&probabilityContext));
+            BuildVmContext(&probabilityContext)
+        );
 
     return isVirtualMachine;
 }
