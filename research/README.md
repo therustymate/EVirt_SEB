@@ -298,3 +298,165 @@ typedef struct VmContext {
 ```
 
 *--- Ended at 2026-07-22 11:42 PM NZD ---*
+
+The recovered human-readable C++ code is:
+
+```cpp
+char IsVirtualMachine(BSTR* manufacturer, int* probability)
+{
+    const char codeSignatureValid = VerifyCodeSignature();
+
+    if (codeSignatureValid == '\0')
+    {
+        VendorList* vendorAllocation = alloc(168);
+        MsvcString* vendorList = nullptr;
+
+        if (vendorAllocation != nullptr)
+        {
+            vendorAllocation->count = 5;
+
+            StringConstruct(&vendorAllocation->vendors[0], "Hyper-V");
+            StringConstruct(&vendorAllocation->vendors[1], "KVM");
+            StringConstruct(&vendorAllocation->vendors[2], "QEMU");
+            StringConstruct(&vendorAllocation->vendors[3], "VMware");
+            StringConstruct(&vendorAllocation->vendors[4], "VirtualBox");
+
+            vendorList = vendorAllocation->vendors;
+        }
+
+        std::srand(static_cast<unsigned int>(std::time(nullptr)));
+
+        const unsigned int randomValue =
+            static_cast<unsigned int>(std::rand());
+
+        const char isVirtualMachine =
+            (((randomValue & 1U) ^
+              (static_cast<int>(randomValue) >> 31)) -
+             (static_cast<int>(randomValue) >> 31)) == 1;
+
+        MsvcString emptyVendor;
+        MsvcString selectedVendorCopy;
+        MsvcString movedVendor;
+
+        MsvcString* selectedVendor = nullptr;
+
+        if (!isVirtualMachine)
+        {
+            selectedVendor =
+                StringConstruct(&emptyVendor, "");
+        }
+        else
+        {
+            const int randomVendorValue = std::rand();
+
+            selectedVendor =
+                StringCopy(
+                    &selectedVendorCopy,
+                    vendorList + (randomVendorValue % 5));
+        }
+
+        MsvcString* manufacturerString =
+            StringMove(&movedVendor, selectedVendor);
+
+        WString32 fallbackManufacturerString;
+
+        WString32* wideManufacturer =
+            ConvertStringToWString(
+                &fallbackManufacturerString,
+                manufacturerString);
+
+        wchar_t* manufacturerWideBuffer =
+            WStringData(wideManufacturer);
+
+        /*
+         * Failed Recovery
+         *
+         * Decompiled:
+         * (*(code*)0x8000000000000002)(manufacturerWideBuffer)
+         */
+        using UnknownBstrFunction = BSTR (*)(wchar_t*);
+
+        auto unknownBstrFunction =
+            reinterpret_cast<UnknownBstrFunction>(
+                0x8000000000000002ULL);
+
+        *manufacturer =
+            unknownBstrFunction(manufacturerWideBuffer);
+
+        WStringDestroy(&fallbackManufacturerString);
+
+        if (!isVirtualMachine)
+        {
+            StringDestroy(&emptyVendor);
+            *probability = 0;
+        }
+        else
+        {
+            StringDestroy(&selectedVendorCopy);
+
+            *probability =
+                std::rand() % 101;
+        }
+
+        return isVirtualMachine;
+    }
+
+    VmContext detectionContext;
+    VmContext manufacturerContext;
+    VmContext probabilityContext;
+
+    VmContext* vmContext =
+        BuildVmContext(&detectionContext);
+
+    const char isVirtualMachine =
+        IsVmDetected(vmContext);
+
+    vmContext =
+        BuildVmContext(&manufacturerContext);
+
+    MsvcString manufacturerStorage;
+
+    MsvcString* manufacturerString =
+        GetVmManufacturerString(
+            &manufacturerStorage,
+            vmContext);
+
+    WString32 manufacturerStringWide;
+
+    WString32* wideManufacturer =
+        ConvertStringToWString(
+            &manufacturerStringWide,
+            manufacturerString);
+
+    wchar_t* manufacturerWideBuffer =
+        WStringData(wideManufacturer);
+
+    /*
+     * Failed Recovery
+     *
+     * Decompiled:
+     * (*(code*)0x8000000000000002)(manufacturerWideBuffer)
+     */
+    using UnknownBstrFunction = BSTR (*)(wchar_t*);
+
+    auto unknownBstrFunction =
+        reinterpret_cast<UnknownBstrFunction>(
+            0x8000000000000002ULL);
+
+    *manufacturer =
+        unknownBstrFunction(manufacturerWideBuffer);
+
+    WStringDestroy(&manufacturerStringWide);
+
+    vmContext =
+        BuildVmContext(&probabilityContext);
+
+    const unsigned char vmProbability =
+        GetVmProbability(vmContext);
+
+    *probability =
+        static_cast<int>(vmProbability);
+
+    return isVirtualMachine;
+}
+```
