@@ -68,7 +68,7 @@ cat ProcMon_SEB.csv | grep -E "^......56|^......57|^......58" > ../outputs/ProcM
 
 After removing extra data included before **20:46:56.551** and after **20:46:58.012**, it is possible to see the system information SEB queried: *[ProcMon_SEB_modified02.csv](./dynamic/outputs/ProcMon_SEB_modified02.csv)*
 
-The custom python script: *[procmon_csv_parser.py](../src/procmon_csv_parser.py)* can parse the ProcMon CSV file and list unique items on selected columns.
+The custom python script: *[procmon_csv_parser.py](../test/procmon_csv_parser.py)* can parse the ProcMon CSV file and list unique items on selected columns.
 
 ```bash
 $ python3 procmon_csv_parser.py -c 5 -f ../research/dynamic/outputs/ProcMon_SEB_modified02.csv
@@ -378,3 +378,151 @@ bool IsVirtualMachine(BSTR* manufacturer, int* probability)
     return isVirtualMachine;
 }
 ```
+
+An attacker can bypass the VM detection system by controlling the RNG (Random Number Generation) as the program interestingly returns random VM detection result upon the code signature verification fails.
+
+To achieve this, an attack should intentionally trigger the code signature verification fail-safe functionality which leads to a randomized VM detection result.
+
+---
+
+# **Bypass Test**
+
+File: *[seb_x64_call_test.c](../test/seb_x64_call_test.c)*
+
+```bash
+$ x86_64-w64-mingw32-gcc -o ./build/seb_x64_call_test.exe ./src/seb_x64_call_test.c -loleaut32
+```
+
+The module `seb_x64.dll` returns randomly selected VM detection results as the function `VerifyCodeSignature()` fails.
+
+![](../rsrc/screenshots/Screenshot_20260724_201632_02.png)
+
+---
+
+## **DLL Proxy Attack**
+
+### **Bypass: IsVirtualMachine**
+
+Using the previous project *[MITD](https://github.com/therustymate/MITD)*, a simple proxy DLL execution was tested. The result was successful.
+
+```bash
+$ .venv/bin/activate/python3 ./src/mitd.py -t ~/Downloads/seb_x64.dll -o ~/Documents/EVirt_SEB/src/seb_x64_test --auto-compile
+```
+
+PoC Source Code:
+* *[seb_x64.c](../test/seb_x64_test/seb_x64.c)*
+* *[seb_x64.def](../test/seb_x64_test/seb_x64.def)*
+
+![](../rsrc/screenshots/Screenshot_20260724_214031.png)
+
+Although the `seb_x64.dll` was executed through the proxy DLL, the .NET Framework integrity system failed to detect replaced proxy DLL and the crafted malicious DLL was successfully injected.
+
+![](../rsrc/screenshots/Screenshot_20260724_213650.png)
+
+Additionally, the random VM return was also confirmed as the virtual machine detection was bypassed, however, the machine was detect that it is in a remote session.
+
+![](../rsrc/screenshots/Screenshot_20260724_214704.png)
+
+---
+
+### **Bypass: IsRemoteSession**
+
+```c
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+bool IsRemoteSession(void)
+
+{
+    char cVar1;
+    uint randomValue;
+    time_t randomSeed;
+    undefined1 auStack_48 [32];
+    bool isRemoteSession;
+    ulonglong local_18;
+    
+                    /* 0x1280c0  3  IsRemoteSession */
+    local_18 = DAT_180515d40 ^ (ulonglong)auStack_48;
+    isRemoteSession = false;
+    cVar1 = VerifyCodeSignature();
+    if (cVar1 == '\0') {
+        randomSeed = std_time((time_t *)0x0);
+        std_srand((uint)randomSeed);
+        randomValue = std_rand();
+        isRemoteSession =
+             (randomValue & 1 ^ (int)randomValue >> 0x1f) - ((int)randomValue >> 0x1f) == 1;
+    }
+    else {
+        isRemoteSession = FUN_180139e50();
+    }
+    return isRemoteSession;
+}
+```
+
+```cpp
+#include <cstdlib>
+#include <ctime>
+
+bool IsRemoteSession()
+{
+    if (!VerifyCodeSignature())
+    {
+        std::srand(std::time(nullptr));
+        const int randomValue = std::rand();
+
+        return (randomValue % 2) == 1;
+    }
+
+    return FUN_180139e50();
+}
+```
+
+As the source code has exactly same vulnerability, it is also possible to bypass.
+
+# **PoC Exploit 01**
+
+By returning manipulated information to SEB, it is possible to bypass the virtual machine and remote session detection functionalities.
+
+![](../rsrc/screenshots/Screenshot_20260724_231219.png)
+
+## **HOWEVER**
+```cs
+public VirtualMachineDetector(IIntegrityModule integrityModule, ILogger logger, IRegistry registry, ISystemInfo systemInfo)
+{
+    this.integrityModule = integrityModule;
+    this.logger = logger;
+    this.registry = registry;
+    this.systemInfo = systemInfo;
+}
+
+public bool IsVirtualMachine()
+{
+    var isVm = false;
+
+    isVm |= HasNoSystemHardware();
+    isVm |= HasVirtualDevice();
+    isVm |= HasVirtualMacAddress();
+    isVm |= IsVirtualCpu();
+    isVm |= IsVirtualRegistry();
+    isVm |= IsVirtualSystem(systemInfo.BiosInfo, systemInfo.Manufacturer, systemInfo.Model);
+    isVm |= integrityModule.IsVirtualMachine(out var manufacturer, out var probability);
+
+    logger.Debug($"Computer '{systemInfo.Name}' appears {(isVm ? "" : "not ")}to be a virtual machine{(isVm ? $" ({manufacturer}, {probability}%)" : "")}.");
+
+    return isVm;
+}
+```
+
+The variable `isVm` uses *OR* statement which allows them to detect virtual machine if ANY of the detection mechanism returned True.
+
+Therefore, this exploit only bypassed the 7th VM detection layer (`integrityModule.IsVirtualMachine`).
+
+---
+
+# **PoC Exploit 02**
+
+The integrity system of SEB doesn't detect dnSpy debugger, meaning by using dnSpy to manipulate the VM and remote session detection result, it is possible to bypass all the VM and remote session detection layers.
+
+![](../rsrc/screenshots/Screenshot_20260724_234158.png)
+
+*--- All that reverse engineering just to find there was no hash check nor the anti-debugger to bypass... ---*
