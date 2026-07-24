@@ -553,3 +553,5 @@ The integrity system of SEB doesn't detect dnSpy debugger, meaning by using dnSp
 ![](../rsrc/screenshots/Screenshot_20260724_234158.png)
 
 *--- All that reverse engineering just to find there was no hash check nor the anti-debugger to bypass... ---*
+
+*--- Ended at 2026-07-24 11:59 PM NZD ---*
