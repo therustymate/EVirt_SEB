@@ -517,6 +517,31 @@ The variable `isVm` uses *OR* statement which allows them to detect virtual mach
 
 Therefore, this exploit only bypassed the 7th VM detection layer (`integrityModule.IsVirtualMachine`).
 
+1. `HasNoSystemHardware()`
+    * Query WMI to detect: memory, sensor, fan, and voltage
+    * Detects when *all* components are missing
+2. HasVirtualDevice()
+    * PnP Device ID
+        * Detect strings related to: Hyper-V
+        * Detect strings related to: QEMU
+        * Detect strings related to: VirtualBox
+        * Detect strings related to: VMware
+3. HasVirtualMacAddress()
+    * Detects if MAC prefix is manipulated
+    * Detects if QEMU `525400` is present
+    * Detects if VirtualBox `080027` is present
+4. IsVirtualCpu()
+    * Detects if *" kvm "* is present in CPUID
+5. IsVirtualRegistry()
+    * Detects using past DeviceMake / DeviceModel in device cache
+6. IsVirtualSystem()
+    * BIOS / Manufacturer / Model
+        * Detect strings related to: Hyper-V
+        * Detect strings related to: QEMU
+        * Detect strings related to: VirtualBox
+        * Detect strings related to: VMware
+7. **integrityModule.IsVirtualMachine()**
+
 ---
 
 # **PoC Exploit 02**
