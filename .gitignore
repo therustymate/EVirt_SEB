@@ -7,3 +7,5 @@ research/dynamic/dumps/*.XML
 
 # Ghidra project database
 *.rep/
+
+/build
