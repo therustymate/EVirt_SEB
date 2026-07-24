@@ -523,6 +523,8 @@ Therefore, this exploit only bypassed the 7th VM detection layer (`integrityModu
 
 The integrity system of SEB doesn't detect dnSpy debugger, meaning by using dnSpy to manipulate the VM and remote session detection result, it is possible to bypass all the VM and remote session detection layers.
 
+![](../rsrc/screenshots/Screenshot_20260724_234653.png)
+
 ![](../rsrc/screenshots/Screenshot_20260724_234158.png)
 
 *--- All that reverse engineering just to find there was no hash check nor the anti-debugger to bypass... ---*
