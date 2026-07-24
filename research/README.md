@@ -519,7 +519,7 @@ Therefore, this exploit only bypassed the 7th VM detection layer (`integrityModu
 
 1. `HasNoSystemHardware()`
     * Query WMI to detect: memory, sensor, fan, and voltage
-    * Detects when *all* components are missing
+    * Detects when *any* of the components are missing
 2. HasVirtualDevice()
     * PnP Device ID
         * Detect strings related to: Hyper-V
