@@ -9,3 +9,7 @@ research/dynamic/dumps/*.XML
 *.rep/
 
 /build
+EVirtPatch/bin
+EVirtPatch/obj
+test/exploit/bin
+test/exploit/obj

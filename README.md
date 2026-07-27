@@ -37,6 +37,16 @@ The scope of this project covers [Windows Safe Exam Browser v3.10.2](https://git
 
 ---
 
+![](./rsrc/screenshots/Screenshot_2026-07-27_17-33-01.png)
+
+| Environment           | Information                                       |
+|:----------------------|:--------------------------------------------------|
+| Operating System      | Debian GNU/Linux 13 (trixie) x86_64               |
+| Virtualization Engine | QEMU emulator version 10.0.11 (qemu-10.2.2-1.fc44)|
+| Architecture          | Intel x64                                         |
+
+---
+
 ![Screenshot_20260721_212519](./rsrc/screenshots/Screenshot_20260721_212519.png)
 
 | Item                              | Value                                 |
@@ -59,6 +69,31 @@ The scope of this project covers [Windows Safe Exam Browser v3.10.2](https://git
 | **Virtualization-based Security** | Not enabled                           |
 | **Hypervisor Bit**                | Detected                              |
 
+---
+
+![Screenshot_20260721_212519](./rsrc/rdp/remmina_Windows%2011_192.168.122.145_20260727-053119.png)
+
+| Item                              | Value                                             |
+|:----------------------------------|:--------------------------------------------------|
+| **OS**                            | Microsoft Windows 11 Pro                          |
+| **OS Version**                    | 10.0.26200 Build 26200                            |
+| **OS Manufacturer**               | Microsoft Corporation                             |
+| **System Name**                   | DESKTOP-1L5BAXH                                   |
+| **System Manufacturer**           | QEMU                                              |
+| **System Model**                  | Standard PC (Q35 + ICH9, 2009)                    |
+| **System Type**                   | x64-based PC                                      |
+| **Processor**                     | 11th Gen Intel(R) Core(TM) i5-1135G7              |
+| **BIOS Version**                  | Debian distribution of EDK II 2025.02-8+deb13u1   |
+| **SMBIOS Version**                | 2.8                                               |
+| **BIOS Mode**                     | UEFI                                              |
+| **Platform Role**                 | Desktop                                           |
+| **Secure Boot State**             | On                                                |
+| **Installed Physical Memory**     | 8.00 GB                                           |
+| **Kernel DMA Protection**         | Off                                               |
+| **Virtualization-based Security** | Not enabled                                       |
+| **Hypervisor Bit**                | Detected                                          |
+
+
 *Note: this information will be changed as new VM settings applies.*
 
 ## Methodology
@@ -79,17 +114,25 @@ The scope of this project covers [Windows Safe Exam Browser v3.10.2](https://git
 **SEB VM detection techniques are based on Windows Registry, WMI, CPUID, Hardware Enumeration, Driver Enumeration**. As spoofing these components are possible, **it is possible to decrease the VM detection confidence by spoofing the system components above, resulting possible VM detection bypass**.
 
 ### Validation Method
+A test exam with high security mode (Safe Exam Browser) will be provided through the [Exam.net](https://exam.net/) from an exam supervisor and the research outcome (exploit) will be tested on the exam to simulate an online exam security bypass scenario.
 
 ### Validation Standards
+1. SEB fails to detect VM and remote session and shows missing configuration screen.
+2. SEB fails to detect VM and remote session and allows the researcher to take a test exam.
+3. The supervisor cannot notice any visual difference during the inspection.
 
 ### Validation Assumption
+1. The latest version of Safe Exam Browser is SEB v3.10.2.
+2. The simulated threat actor (a bad student) can customize VM configurations.
 
 ## Research
 [Reverse Engeering Research](./research/README.md)
 
 ## Validation
 
+
 ## Limitations
+* **Application/Runtime Integrity**: .
 
 ## References
 ChatGPT, Gemini, and DeepSeek were used to improve the technical English expressions in this document.

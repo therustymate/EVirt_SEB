@@ -390,7 +390,7 @@ To achieve this, an attack should intentionally trigger the code signature verif
 File: *[seb_x64_call_test.c](../test/seb_x64_call_test.c)*
 
 ```bash
-$ x86_64-w64-mingw32-gcc -o ./build/seb_x64_call_test.exe ./src/seb_x64_call_test.c -loleaut32
+$ x86_64-w64-mingw32-gcc -o ./build/seb_x64_call_test.exe ./test/poc_exploit_01/seb_x64_call_test.c -loleaut32
 ```
 
 The module `seb_x64.dll` returns randomly selected VM detection results as the function `VerifyCodeSignature()` fails.
@@ -555,3 +555,12 @@ The integrity system of SEB doesn't detect dnSpy debugger, meaning by using dnSp
 *--- All that reverse engineering just to find there was no hash check nor the anti-debugger to bypass... ---*
 
 *--- Ended at 2026-07-24 11:59 PM NZD ---*
+
+# **EVirtPatch**
+Using the `dnlib`, EVirtPatch allows threat actors to patch the `SafeExamBrowser.Monitoring.dll` to always return that the machine is NOT a virtual machine and is NOT in a remote session. After the patch is applied, the VM detection and remote session detection capability of SafeExamBrowser was bypassed.
+
+![](../rsrc/screenshots/Screenshot_2026-07-27_23-59-16.png)
+
+![](../rsrc/screenshots/Screenshot_2026-07-27_23-59-52.png)
+
+*--- Ended at 2026-07-27 11:59 PM NZD ---*
