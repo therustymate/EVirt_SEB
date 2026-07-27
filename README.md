@@ -128,6 +128,53 @@ A test exam with high security mode (Safe Exam Browser) will be provided through
 ## Research
 [Reverse Engeering Research](./research/README.md)
 
+### Patch & Reverse Engineering: `seb_x64.dll`
+The DLL `seb_x64.dll` is responssible for:
+1. Verifying the code and runtime integrity.
+2. Detecting virtual machines (1 out of 7 detection layers).
+3. Detecting remote sessions (1 out of 2 detection layers).
+
+When SafeExamBrowser is launched, the module `SafeExamBrowser.Integrity` imports the `seb_x64.dll` and defines the following functions:
+* **`bool IsRemoteSession();`**
+* **`bool IsVirtualMachine(out IntPtr manufacturer, out int probability);`**
+* **`bool VerifyCodeSignature();`**
+* **`bool VerifyRuntimeIntegrity(out IntPtr data, out int count);`**
+* ...
+
+The functions `VerifyCodeSignature` and `VerifyRuntimeIntegrity` are responssible for verifying the integrity of SafeExamBrowser. However, there are no additional protection layers to confirm its integrity, meaning this can be bypassed if they are manipulated.
+
+DLL proxy execution technique exploits the [DLL search order](https://learn.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-search-order), resulting the SafeExamBrowser to load the crafted malicious DLL which manipulates the integrity verification results.
+
+The following source codes weaponize the DLL proxy execution technique to manipulate the integrity verification, virtual machine detection, and remote session detection results of the SafeExamBrowser:
+* *[seb_x64.c](./seb_x64_patch/seb_x64.c)*
+* *[seb_x64.def](./seb_x64_patch/seb_x64.def)*
+* *[seb_x64.sh](./seb_x64_patch/seb_x64.sh)*
+
+*To ensure that this project cannot be directly abused to bypass the SafeExamBrowser, the EVirtPatch program does not support automatic DLL proxy execution setup, therefore, bypassing the integrity verification must be done manually. This "may" allow exam supervisors to detect compromised SafeExamBrowser and take actions against them. However, setting up the DLL proxy execution is not complicated and related information are available on online.*
+
+### Patch & Reverse Engineering: `SafeExamBrowser.Monitoring.dll`
+The DLL `SafeExamBrowser.Monitoring.dll` is responsible for:
+1. Monitoring the clipboard.
+2. Detecting virtual machines (6 out of 7 detection layers).
+3. Detecting remote sessions (1 out of 2 detection layers).
+
+The function `IsVirtualMachine` detects virtual machines through 7 layers of detection layers:
+1. WMI system hardware detection.
+2. PnP (Plug aNd Play) device detection.
+3. MAC address detection.
+4. KVM virtual CPU detection.
+5. Registry device cache detection.
+6. BIOS virtual system detection.
+7. `seb_x64.dll!IsVirtualMachine`
+
+Instead of attempting to bypass these individual detection layers, patching the DLL to return manipulated detection results leads to a detection bypass. However, patching the program will cause an integrity verification failure, meaning without the previous DLL proxy execution patch, the SafeExamBrowser detects that it self is compromised.
+
+### Conclusion
+Using the `SafeExamBrowser.Monitoring.dll` patch, the virtual machine and remote session detection of the SafeExamBrowser was successfully bypassed. However, this patch triggers both the code and runtime integrity verification failure. Furthermore, the 7th layer of the virtual machine detection layers and the 2nd layer of the remote session detection layers can log both the virtual machine detection results and the remote session detection results.
+
+Using the `seb_x64.dll` patch, the integrity verification results were manipulated, leading to a successful integrity verification bypass. The patch also manipulates the external virtual machine and remote session detections (7th layer of virtual machine detection layers & 2nd layer of remote session detection layers), leading to a complete detection bypass.
+
+
 ## Validation
 
 
