@@ -332,7 +332,7 @@ bool IsVirtualMachine(BSTR* manufacturer, int* probability)
         std::wstring wideVendor(vendor.begin(), vendor.end());
 
         // Failed Recovery:
-        // likely SysAllocString(wideVendor.c_str())
+        // This can be string related function (different compare to the below Themida protected function.)
         *manufacturer =
             reinterpret_cast<BSTR (*)(const wchar_t*)>(
                 0x8000000000000002
@@ -364,7 +364,7 @@ bool IsVirtualMachine(BSTR* manufacturer, int* probability)
     );
 
     // Failed Recovery:
-    // likely SysAllocString(wideManufacturer.c_str())
+    // This function is likely the main VM detection function protected by Themida.
     *manufacturer =
         reinterpret_cast<BSTR (*)(const wchar_t*)>(
             0x8000000000000002
