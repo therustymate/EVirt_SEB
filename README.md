@@ -158,14 +158,18 @@ The DLL `SafeExamBrowser.Monitoring.dll` is responsible for:
 2. Detecting virtual machines (6 out of 7 detection layers).
 3. Detecting remote sessions (1 out of 2 detection layers).
 
-The function `IsVirtualMachine` detects virtual machines through 7 layers of detection layers:
-1. WMI system hardware detection.
+The function `IsVirtualMachine` detects virtual machines through the following 7 layers of detection layers:
+1. System hardware detection (WMI).
 2. PnP (Plug aNd Play) device detection.
 3. MAC address detection.
 4. KVM virtual CPU detection.
-5. Registry device cache detection.
+5. Device cache detection (Registry).
 6. BIOS virtual system detection.
-7. `seb_x64.dll!IsVirtualMachine`
+7. `seb_x64!IsVirtualMachine`
+
+The function `IsRemoteSession` detects remote sessions through the following 2 layers of detection layers:
+1. Terminal server session detection.
+2. `seb_x64!IsRemoteSession`
 
 Instead of attempting to bypass these individual detection layers, patching the DLL to return manipulated detection results leads to a detection bypass. However, patching the program will cause an integrity verification failure, meaning without the previous DLL proxy execution patch, the SafeExamBrowser detects that it self is compromised.
 
@@ -179,7 +183,8 @@ Using the `seb_x64.dll` patch, the integrity verification results were manipulat
 
 
 ## Limitations
-* **Application/Runtime Integrity**: .
+* **Reality**: Realistically students cannot easily configure and control virtual machines to cheat on online exams. This may require knowledges related to virtual machine configurations.
+* **Phyiscal Security**: Supervisors can physically monitor students' PC which may detect attemps to cheat on online exams.
 
 ## References
 ChatGPT, Gemini, and DeepSeek were used to improve the technical English expressions in this document.
