@@ -7,10 +7,10 @@ This project and all associated materials are provided strictly for authorized p
 This project declares that it is NOT intended to encourage cheating on online exams.
 
 ## Executive Summary
-Project EVirt_SEB is a VM detection bypass research project for Safe Exam Browser (or SEB) through static and dynamic reverse engineering, ultimately to propse mitigations against identified vulnerabilities.
+Project EVirt_SEB is a VM detection bypass research project for Safe Exam Browser (or SEB) through static and dynamic reverse engineering, ultimately to propose mitigations against identified vulnerabilities.
 
 ## Purpose
-The ultimate goal of this project is to identify potential VM detection bypass-related vulnerabilities through static and dynamic reverse engineering and propse possible mitigations against identified vulnerabilities.
+The ultimate goal of this project is to identify potential VM detection bypass-related vulnerabilities through static and dynamic reverse engineering and propose possible mitigations against identified vulnerabilities.
 
 ## Scope
 The scope of this project covers [Windows Safe Exam Browser v3.10.2](https://github.com/SafeExamBrowser/seb-win-refactoring/releases/tag/v3.10.2) and will be tested on the following operating systems:
@@ -103,7 +103,6 @@ The scope of this project covers [Windows Safe Exam Browser v3.10.2](https://git
 * [**Virtual Machine (VM)**](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-a-virtual-machine): A virtual machine emulates a physical computer, running its own operating system and apps with virtualized resources. It’s isolated from the host system, allowing users to perform secure tasks like testing apps or using different operating systems while optimizing physical hardware.
 * [**Windows Registry**](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users): A central hierarchical database used in Windows 98, Windows CE, Windows NT, and Windows 2000 used to store information that is necessary to configure the system for one or more users, applications, and hardware devices.
 * [**Windows Management Instrumentation (WMI)**](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page): Windows Management Instrumentation (WMI) is the infrastructure for management data and operations on Windows-based operating systems. Although you can write WMI scripts or applications to automate administrative tasks on remote computers, WMI also supplies management data to other parts of the operating system and products.
-* [**CPUID**](https://en.wikipedia.org/wiki/CPUID): CPUID instruction (identified by a CPUID opcode) is a processor supplementary instruction (its name derived from "CPU Identification") allowing software to discover details of the processor. It was introduced by Intel in 1993 with the launch of the Pentium and late 486 processors.
 
 ---
 
@@ -127,6 +126,24 @@ A test exam with high security mode (Safe Exam Browser) will be provided through
 
 ## Research
 [Reverse Engeering Research](./research/README.md)
+
+The QEMU/KVM configuration XML file is at: [./research/vm_config.xml](./research/vm_config.xml)
+
+### Requirements
+The following software were installed during the tests:
+* [virtio-win-0.1.285](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.285-1/)
+
+*Note: ISO file was used for the research.*
+
+### Reproduce Instructions
+1. Install VirtIO drivers.
+2. Use VirtIo video model type in KVM/QEMU.
+3. Reboot.
+4. Install SafeExamBrowser.
+5. Apply EVirtPatch.
+6. Manually apply `seb_x64.dll` DLL proxy.
+
+*Note: If the SEB displays internal/external display-related warnings, please modify the VM configuration to use VirtIO drivers for the video model.*
 
 ### Patch & Reverse Engineering: `seb_x64.dll`
 The DLL `seb_x64.dll` is responssible for:
@@ -180,11 +197,18 @@ Using the `seb_x64.dll` patch, the integrity verification results were manipulat
 
 
 ## Validation
+| VM                                | Supervisor                    |
+|:----------------------------------|:------------------------------|
+| ![VM01](./rsrc/live/VM01.png)     | ![SP01](./rsrc/live/SP01.png) |
 
+Exam.net-based exam environments were accessible through VM after patching SEB with EVirtPatch and new proxy `seb_x64.dll`. However, Exam.net detected unusual changes on SEB and the VM device:
+
+![NT01.png](./rsrc/mail/NT01.png)
 
 ## Limitations
 * **Reality**: Realistically students cannot easily configure and control virtual machines to cheat on online exams. This may require knowledges related to virtual machine configurations.
 * **Phyiscal Security**: Supervisors can physically monitor students' PC which may detect attemps to cheat on online exams.
+* **Exam.net Detection**: After the supervised research, Exam.net sent emails to supervisors who authorised these tests that they detected unusual changes on SEB and the device (it is uncertain that how and what exactly they detected).
 
 ## References
 ChatGPT, Gemini, and DeepSeek were used to improve the technical English expressions in this document.
