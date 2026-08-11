@@ -1,0 +1,8 @@
+[2324:3420:0727/171645.223:WARNING:chrome\browser\signin\account_consistency_mode_manager.cc:74] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[2960:2176:0727/171647.231:ERROR:ui\gl\direct_composition_support.cc:243] GetGpuDriverOverlayInfo: Failed to retrieve video device
+[7488:10076:0727/171650.922:ERROR:gpu\ipc\client\command_buffer_proxy_impl.cc:285] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+[2324:3420:0727/171652.152:INFO:CONSOLE:2416] "%c Modification and inspection is not allowed and may be reported to your teacher  background: yellow; color: red; font-size: 20px", source: https://exam.net/build/assets/entry.Cd7470MGx9a7.js (2416)
+[2324:3420:0727/171652.213:INFO:CONSOLE:15] "[bugsnag] Loaded!", source: https://exam.net/build/assets/chunk.BOoftLVcHi1s.js (15)
+[2324:3420:0727/171715.091:INFO:CONSOLE:2416] "%c Modification and inspection is not allowed and may be reported to your teacher  background: yellow; color: red; font-size: 20px", source: https://exam.net/build/assets/entry.Cd7470MGx9a7.js (2416)
+[2324:3420:0727/171715.119:INFO:CONSOLE:15] "[bugsnag] Loaded!", source: https://exam.net/build/assets/chunk.BOoftLVcHi1s.js (15)
+[2324:3420:0727/171952.966:ERROR:services\on_device_model\public\cpp\service_client.cc:36] Unexpected on_device_model service disconnect: Error loading backend.

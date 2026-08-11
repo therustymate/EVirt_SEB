@@ -1,0 +1,393 @@
+﻿# New client instance started at 2026-07-27 17:16:34.212
+
+2026-07-27 17:16:34.216 [01] - INFO: Initiating startup procedure...
+2026-07-27 17:16:34.233 [01] - INFO: Loading text data...
+2026-07-27 17:16:34.254 [01] - INFO: Initializing runtime connection...
+2026-07-27 17:16:34.973 [01] - INFO: Successfully connected to the runtime.
+2026-07-27 17:16:34.975 [01] - INFO: Initializing application configuration...
+2026-07-27 17:16:35.135 [01] - INFO: Successfully retrieved the application configuration from the runtime.
+2026-07-27 17:16:35.135 [01] - INFO:  -> Client-ID: 15fe0fe8-7ae3-4786-92e8-b187c2c6a4c4
+2026-07-27 17:16:35.137 [01] - INFO:  -> Runtime-ID: f0db7418-52fc-4328-ab84-4d2579b38477
+2026-07-27 17:16:35.137 [01] - INFO:  -> Session-ID: 38eb7b45-6c44-4d92-ab85-d795f9a712de
+2026-07-27 17:16:35.137 [01] - INFO: Initializing window guard...
+2026-07-27 17:16:35.141 [01] - INFO: Activated window guard.
+2026-07-27 17:16:35.209 [01] - INFO: Starting communication host...
+2026-07-27 17:16:35.399 [01] - INFO: Starting keyboard interception...
+2026-07-27 17:16:35.410 [01] - INFO: Starting mouse interception...
+2026-07-27 17:16:35.412 [01] - INFO: Initializing permissions...
+2026-07-27 17:16:35.548 [01] - WARNING: Permission to access the wireless networking functionality has not been granted! If required, please grant the location permission manually under 'Privacy & Security' in the system settings.
+2026-07-27 17:16:35.550 [01] - INFO: Initializing applications...
+2026-07-27 17:16:36.373 [01] - INFO: The following applications need to be terminated: rdpclip.exe.
+2026-07-27 17:16:44.016 [01] - INFO: The user chose to automatically terminate all running applications.
+2026-07-27 17:16:44.022 [01] - WARNING: [Process 'rdpclip.exe' (2052)] Failed to send close message to main window!
+2026-07-27 17:16:44.024 [01] - WARNING: [Process 'rdpclip.exe' (2052)] Failed to send close message to main window!
+2026-07-27 17:16:44.024 [01] - WARNING: [Process 'rdpclip.exe' (2052)] Failed to send close message to main window!
+2026-07-27 17:16:44.026 [01] - WARNING: [Process 'rdpclip.exe' (2052)] Failed to send close message to main window!
+2026-07-27 17:16:44.028 [01] - WARNING: [Process 'rdpclip.exe' (2052)] Failed to send close message to main window!
+2026-07-27 17:16:44.038 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'rdpclip.exe' (2052).
+2026-07-27 17:16:44.038 [01] - INFO: Successfully terminated application 'rdpclip.exe'.
+2026-07-27 17:16:44.040 [01] - INFO: [ApplicationMonitor] Started monitoring applications.
+2026-07-27 17:16:44.043 [01] - INFO: [ApplicationMonitor] Registered system capture start event with ID = f4a0ae68-1c1c-4b73-8897-4cc4b0163896.
+2026-07-27 17:16:44.045 [01] - INFO: [ApplicationMonitor] Registered system foreground event with ID = 9a54f5c3-2c85-4a8a-83fe-61a135b644af.
+2026-07-27 17:16:44.047 [01] - INFO: Initializing working area...
+2026-07-27 17:16:44.063 [01] - INFO: [DisplayMonitor] Saved original working area for DISPLAY49 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1032.
+2026-07-27 17:16:44.063 [01] - INFO: [DisplayMonitor] Trying to set new working area for DISPLAY49 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1080.
+2026-07-27 17:16:44.063 [01] - INFO: [DisplayMonitor] Working area of DISPLAY49 (1920x1080) is now set to: Left = 0, Top = 0, Right = 1920, Bottom = 1080.
+2026-07-27 17:16:44.065 [01] - INFO: [DisplayMonitor] Started monitoring display changes.
+2026-07-27 17:16:44.067 [01] - INFO: Initializing shell...
+2026-07-27 17:16:44.122 [01] - INFO: [Audio] Found 'Remote Audio' to be the active audio device.
+2026-07-27 17:16:44.132 [01] - INFO: [Audio] Started monitoring the audio device.
+2026-07-27 17:16:44.134 [01] - INFO: [Audio] Saved original volume of 100%.
+2026-07-27 17:16:44.135 [01] - INFO: [Audio] Set initial volume to 75%.
+2026-07-27 17:16:44.145 [01] - INFO: [Keyboard] Saved current keyboard layout 'English (United States)' [ENG, US].
+2026-07-27 17:16:44.146 [01] - INFO: [Keyboard] Detected keyboard layout 'English (United States)' [ENG, US].
+2026-07-27 17:16:44.148 [01] - INFO: [Keyboard] Detected keyboard layout 'English (United Kingdom)' [ENG, US].
+2026-07-27 17:16:44.202 [01] - ERROR: [NetworkAdapter] Access to the wireless network adapter has been denied (DeniedBySystem)!
+2026-07-27 17:16:44.242 [01] - INFO: [NetworkAdapter] Connection established (Wired).
+2026-07-27 17:16:44.242 [01] - INFO: [NetworkAdapter] Started monitoring the network adapter.
+2026-07-27 17:16:44.242 [01] - INFO: [PowerSupply] Started monitoring the power supply (battery charge thresholds: low = 20%, critical = 10%).
+2026-07-27 17:16:44.242 [01] - INFO: Initializing action center...
+2026-07-27 17:16:44.288 [01] - INFO: Taskbar is disabled, skipping initialization.
+2026-07-27 17:16:44.288 [01] - INFO: Initializing task view...
+2026-07-27 17:16:44.295 [01] - INFO: Display(s) will be always on.
+2026-07-27 17:16:44.295 [01] - INFO: System will be always on.
+2026-07-27 17:16:44.426 [01] - INFO: Initializing browser...
+2026-07-27 17:16:44.983 [01] - INFO: [BrowserApplication] Starting initialization...
+2026-07-27 17:16:45.286 [01] - INFO: [BrowserApplication] Initialized browser.
+2026-07-27 17:16:45.314 [01] - INFO: Initializing server...
+2026-07-27 17:16:45.575 [01] - INFO: [ServerProxy] Started sending log items.
+2026-07-27 17:16:45.575 [01] - INFO: [ServerProxy] Started sending pings.
+2026-07-27 17:16:45.577 [01] - INFO: [ServerProxy] Started monitoring system components.
+2026-07-27 17:16:45.577 [01] - INFO: [Invigilator] Initialized functionality: Raise hand enabled, message disabled.
+2026-07-27 17:16:45.844 [01] - INFO: Initializing clipboard...
+2026-07-27 17:16:45.846 [01] - INFO: [Clipboard] Initialized clipboard for policy 'Allow'.
+2026-07-27 17:16:45.856 [01] - INFO: [BrowserResponsibility] Auto-starting browser...
+2026-07-27 17:16:46.197 [01] - INFO: [BrowserApplication] Created browser window #1.
+2026-07-27 17:16:46.198 [01] - INFO: [IntegrityResponsibility] Started monitoring runtime integrity.
+2026-07-27 17:16:46.200 [01] - INFO: [SystemSentinel] Started monitoring system events.
+2026-07-27 17:16:46.202 [01] - INFO: [SystemSentinel] Started monitoring sticky keys.
+2026-07-27 17:16:46.282 [01] - INFO: Application successfully initialized.
+
+2026-07-27 17:16:50.896 [29] - ERROR: [IntegrityModule] Unexpected error while attempting to calculate browser exam key!
+
+   Exception Message: Unable to find an entry point named 'CalculateBrowserExamKey' in DLL 'seb_x64.dll'.
+   Exception Type: System.EntryPointNotFoundException
+
+   at SafeExamBrowser.Configuration.Integrity.IntegrityModule.Native.CalculateBrowserExamKey(String configurationKey, String salt)
+   at SafeExamBrowser.Configuration.Integrity.IntegrityModule.TryCalculateBrowserExamKey(String configurationKey, String salt, String& browserExamKey) in .\SafeExamBrowser.Configuration\Integrity\IntegrityModule.cs:line 152
+
+2026-07-27 17:16:50.896 [29] - WARNING: [KeyGenerator] Failed to calculate browser exam key using integrity module! Falling back to simplified calculation...
+2026-07-27 17:16:51.205 [14] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:16:51.220 [14] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:16:51.444 [23] - INFO: [Browser Window #1] Navigated.
+2026-07-27 17:16:51.609 [27] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:16:53.347 [13] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:16:56.222 [34] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:16:56.222 [34] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:16:58.999 [14] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:01.226 [36] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:17:01.226 [36] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:17:03.964 [34] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:06.245 [36] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:17:06.245 [36] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:17:08.346 [37] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:10.148 [13] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:17:11.253 [13] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:17:11.253 [13] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:17:12.607 [27] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:13.951 [36] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:14.971 [23] - INFO: [Browser Window #1] Navigated.
+2026-07-27 17:17:15.248 [14] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:17:16.262 [14] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:17:16.263 [14] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:17:18.368 [39] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:18.641 [23] - INFO: [Browser Window #1] Navigated.
+2026-07-27 17:17:18.654 [23] - INFO: [Browser Window #1] Navigated.
+2026-07-27 17:17:18.787 [23] - INFO: [Browser Window #1] Navigated.
+2026-07-27 17:17:18.797 [23] - INFO: [Browser Window #1] Navigated.
+2026-07-27 17:17:20.216 [34] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:17:21.279 [34] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:17:21.279 [34] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:17:23.383 [14] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:24.831 [37] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:17:26.287 [34] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:17:26.287 [34] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:17:28.401 [13] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:30.167 [36] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:17:31.288 [37] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:17:31.288 [37] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:17:32.914 [27] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:33.377 [34] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:34.554 [39] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:17:34.996 [39] - INFO: [RuntimeProxy] Pinged host, connection is alive.
+2026-07-27 17:17:36.289 [39] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:17:36.290 [39] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:17:38.408 [36] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:39.590 [14] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:17:41.297 [37] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:17:41.297 [37] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:17:43.379 [39] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:44.602 [13] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:17:46.298 [06] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:17:46.298 [06] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:17:48.371 [14] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:49.594 [34] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:17:49.657 [37] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/ping' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:51.298 [06] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:17:51.298 [06] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:17:53.187 [27] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:53.416 [13] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:54.673 [36] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:17:56.302 [44] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:17:56.302 [44] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:17:58.390 [43] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:17:59.634 [39] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:18:01.312 [44] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:18:01.312 [44] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:18:03.451 [36] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:18:04.608 [14] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:18:05.857 [37] - WARNING: [ServerProxy] Failed to send ping: No Response!
+2026-07-27 17:18:06.324 [39] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:18:06.324 [39] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:18:08.449 [34] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:18:09.628 [13] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:18:11.330 [39] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:18:11.330 [39] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:18:13.424 [27] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:18:13.440 [37] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:18:14.554 [43] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:18:16.331 [44] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:18:16.331 [44] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:18:18.468 [39] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:18:19.658 [36] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:18:21.358 [43] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:18:21.358 [43] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:18:23.473 [06] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:18:24.672 [34] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:18:26.362 [43] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:18:26.362 [43] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:18:28.499 [44] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:18:29.686 [37] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:18:31.370 [43] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:18:31.370 [43] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:18:33.500 [34] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:18:33.747 [27] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:18:34.710 [39] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:18:35.011 [39] - INFO: [RuntimeProxy] Pinged host, connection is alive.
+2026-07-27 17:18:36.380 [39] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:18:36.380 [39] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:18:38.510 [43] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:18:39.716 [06] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:18:41.389 [06] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:18:41.389 [06] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:18:43.518 [39] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:18:44.734 [44] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:18:46.393 [47] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:18:46.393 [47] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:18:51.404 [44] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:18:51.404 [44] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:18:52.581 [06] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:18:53.752 [34] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:18:56.422 [44] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:18:56.422 [44] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:18:57.571 [47] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:01.424 [45] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:19:01.424 [45] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:19:02.228 [27] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:02.590 [37] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:02.840 [43] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:19:06.427 [34] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:19:06.427 [34] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:19:07.605 [44] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:07.903 [39] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:19:11.428 [34] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:19:11.429 [34] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:19:12.620 [49] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:13.985 [45] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/ping' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:16.432 [52] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:19:16.432 [52] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:19:16.999 [06] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:19:17.632 [39] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:21.450 [06] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:19:21.450 [06] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:19:21.970 [47] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:19:22.643 [50] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:26.463 [34] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:19:26.463 [34] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:19:26.999 [37] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:19:27.638 [43] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:31.480 [34] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:19:31.480 [34] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:19:32.652 [44] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:19:32.671 [51] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:34.647 [27] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:35.013 [47] - INFO: [RuntimeProxy] Pinged host, connection is alive.
+2026-07-27 17:19:36.489 [47] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:19:36.489 [47] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:19:37.003 [49] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:19:37.685 [37] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:41.497 [49] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:19:41.497 [49] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:19:41.985 [39] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:19:42.371 [45] - WARNING: [ServerProxy] Failed to send ping: No Response!
+2026-07-27 17:19:42.657 [06] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:46.503 [39] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:19:46.504 [39] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:19:46.957 [50] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:19:47.668 [47] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:51.518 [50] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:19:51.518 [50] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:19:51.950 [43] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:19:52.707 [49] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:19:56.529 [50] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:19:56.529 [50] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:19:57.020 [51] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:19:57.699 [39] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:01.544 [44] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:20:01.546 [44] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:20:02.061 [37] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:20:02.689 [34] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:06.550 [44] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:20:06.550 [44] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:20:06.975 [06] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:20:07.055 [27] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:07.680 [51] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:11.558 [44] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:20:11.558 [44] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:20:11.985 [47] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:20:12.722 [37] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:16.567 [50] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:20:16.568 [50] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:20:16.998 [49] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:20:17.734 [43] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:21.585 [44] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:20:21.585 [44] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:20:22.038 [39] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:20:22.763 [06] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:26.591 [39] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:20:26.591 [39] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:20:27.011 [34] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:20:27.720 [47] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:31.604 [39] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:20:31.604 [39] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:20:31.986 [51] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:20:32.747 [50] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:35.031 [49] - INFO: [RuntimeProxy] Pinged host, connection is alive.
+2026-07-27 17:20:36.491 [07] - INFO: [KeyboardInterceptor] Blocked 'Injected + LeftAlt' (LeftAlt = 164) when released.
+2026-07-27 17:20:36.493 [07] - INFO: [KeyboardInterceptor] Blocked 'Injected + RightAlt' (RightAlt = 165) when released.
+2026-07-27 17:20:36.496 [07] - INFO: [KeyboardInterceptor] Blocked 'Injected + LeftCtrl' (LeftCtrl = 162) when released.
+2026-07-27 17:20:36.497 [07] - INFO: [KeyboardInterceptor] Blocked 'Injected + RightCtrl' (RightCtrl = 163) when released.
+2026-07-27 17:20:36.497 [07] - INFO: [KeyboardInterceptor] Blocked 'Injected + LeftShift' (LeftShift = 160) when released.
+2026-07-27 17:20:36.497 [07] - INFO: [KeyboardInterceptor] Blocked 'Injected + RightShift' (RightShift = 161) when released.
+2026-07-27 17:20:36.604 [39] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:20:36.607 [39] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:20:37.048 [37] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:20:37.784 [44] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:41.621 [39] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:20:41.621 [39] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:20:42.082 [43] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:20:42.763 [51] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:43.530 [27] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:46.636 [39] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:20:46.636 [39] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:20:47.121 [06] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:20:47.741 [49] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:50.511 [34] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/ping' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:51.649 [37] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:20:51.649 [37] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:20:52.075 [47] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:20:52.762 [45] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:20:56.651 [43] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:20:56.651 [43] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:20:57.085 [50] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:20:57.768 [39] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:01.671 [37] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:21:01.671 [37] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:21:02.095 [44] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:21:02.806 [47] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:06.677 [50] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:21:06.677 [50] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:21:07.060 [51] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:21:07.809 [43] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:11.681 [50] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:21:11.681 [50] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:21:12.798 [37] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:16.007 [27] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:16.122 [49] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:21:16.682 [31] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:21:16.682 [31] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:21:17.778 [51] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:18.839 [34] - WARNING: [ServerProxy] Failed to send ping: No Response!
+2026-07-27 17:21:21.169 [45] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:21:21.687 [49] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:21:21.687 [49] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:21:22.786 [44] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:26.168 [39] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:21:26.698 [45] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:21:26.698 [45] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:21:27.812 [31] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:31.181 [47] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:21:31.706 [34] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:21:31.706 [34] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:21:32.827 [49] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:35.035 [34] - INFO: [RuntimeProxy] Pinged host, connection is alive.
+2026-07-27 17:21:36.195 [43] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:21:36.710 [34] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:21:36.711 [34] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:21:37.790 [06] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:41.177 [37] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:21:41.733 [50] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:21:41.733 [50] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:21:42.813 [39] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:46.156 [51] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:21:46.748 [43] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:21:46.748 [43] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:21:47.842 [34] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:51.215 [44] - WARNING: [ServerProxy] Failed to send power supply status: No Response!
+2026-07-27 17:21:51.750 [47] - INFO: [IntegrityResponsibility] Attempting to verify runtime integrity...
+2026-07-27 17:21:51.762 [47] - INFO: [IntegrityResponsibility] Runtime integrity successfully verified.
+2026-07-27 17:21:52.483 [27] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:52.845 [45] - WARNING: [ServerProxy] Request POST 'http://localhost/seb-server/log' has failed: An error occurred while sending the request -> Unable to connect to the remote server -> No connection could be made because the target machine actively refused it 127.0.0.1:80!
+2026-07-27 17:21:54.476 [44] - INFO: [Browser Window #1] Automatically requesting termination due to quit URL...
+2026-07-27 17:21:54.477 [44] - INFO: [BrowserResponsibility] Attempting to shutdown as requested by the browser...
+2026-07-27 17:21:54.480 [44] - INFO: [IntegrityResponsibility] Stopped monitoring runtime integrity.
+2026-07-27 17:21:54.481 [23] - INFO: [Browser Window #1] Request was aborted.
+2026-07-27 17:21:54.493 [44] - INFO: [SystemSentinel] Stopped monitoring cursors.
+2026-07-27 17:21:54.494 [44] - INFO: [SystemSentinel] Stopped monitoring ease of access.
+2026-07-27 17:21:54.494 [44] - INFO: [SystemSentinel] Stopped monitoring sticky keys.
+2026-07-27 17:21:54.496 [44] - INFO: [SystemSentinel] Stopped monitoring system events.
+
+2026-07-27 17:21:54.546 [01] - INFO: Initiating shutdown procedure...
+2026-07-27 17:21:54.616 [01] - INFO: Finalizing clipboard...
+2026-07-27 17:21:54.617 [01] - INFO: [Clipboard] Finalized clipboard.
+2026-07-27 17:21:54.618 [01] - INFO: Finalizing server...
+2026-07-27 17:21:54.619 [01] - INFO: [ServerProxy] Stopped monitoring system components.
+2026-07-27 17:21:54.620 [01] - INFO: [ServerProxy] Stopped sending log items.
+2026-07-27 17:21:54.620 [01] - INFO: [ServerProxy] Stopped sending pings.
+2026-07-27 17:21:54.620 [01] - INFO: Terminating browser...
+2026-07-27 17:21:54.621 [01] - INFO: [BrowserApplication] Initiating termination...
+2026-07-27 17:21:55.160 [01] - INFO: [BrowserApplication] Closed browser window #1.
+2026-07-27 17:21:55.469 [01] - INFO: [BrowserApplication] Retained browser cache.
+2026-07-27 17:21:55.469 [01] - INFO: [BrowserApplication] Terminated browser.
+2026-07-27 17:21:55.469 [01] - INFO: Terminating shell...
+2026-07-27 17:21:55.473 [01] - INFO: [Audio] Reverted volume to original value of 100%.
+2026-07-27 17:21:55.474 [01] - INFO: [Audio] Stopped monitoring the audio device.
+2026-07-27 17:21:55.475 [01] - INFO: [Keyboard] Restored original keyboard layout 'English (United States)' [ENG, US].
+2026-07-27 17:21:55.477 [01] - INFO: [NetworkAdapter] Stopped monitoring the network adapter.
+2026-07-27 17:21:55.477 [01] - INFO: [PowerSupply] Stopped monitoring the power supply.
+2026-07-27 17:21:55.477 [01] - INFO: Restoring working area...
+2026-07-27 17:21:55.478 [01] - INFO: [DisplayMonitor] Stopped monitoring display changes.
+2026-07-27 17:21:55.478 [01] - INFO: [DisplayMonitor] Restored original working area for DISPLAY49 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1032.
+2026-07-27 17:21:55.478 [01] - INFO: Finalizing applications...
+2026-07-27 17:21:55.480 [01] - INFO: [ApplicationMonitor] Stopped monitoring applications.
+2026-07-27 17:21:55.483 [01] - INFO: [ApplicationMonitor] Unregistered system capture start event with ID = f4a0ae68-1c1c-4b73-8897-4cc4b0163896.
+2026-07-27 17:21:55.484 [01] - INFO: [ApplicationMonitor] Unregistered system foreground event with ID = 9a54f5c3-2c85-4a8a-83fe-61a135b644af.
+2026-07-27 17:21:55.485 [01] - INFO: Stopping mouse interception...
+2026-07-27 17:21:55.486 [01] - INFO: Stopping keyboard interception...
+2026-07-27 17:21:55.487 [01] - INFO: The runtime has already disconnected from the client communication host.
+2026-07-27 17:21:55.488 [01] - INFO: Stopping communication host...
+2026-07-27 17:21:55.524 [01] - INFO: Closing runtime connection...
+2026-07-27 17:21:55.558 [01] - INFO: Successfully disconnected from the runtime.
+2026-07-27 17:21:55.559 [01] - INFO: Application successfully finalized.
+
+# Client instance terminated at 2026-07-27 17:21:55.579
