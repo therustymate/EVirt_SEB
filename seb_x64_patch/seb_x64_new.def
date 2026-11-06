@@ -1,0 +1,11 @@
+LIBRARY seb_x64
+
+EXPORTS
+	IsRemoteSession  @3
+    IsVirtualMachine @4
+	CalculateAppSignatureKey=seb_x64_backup.CalculateAppSignatureKey @1
+	CalculateBrowserExamKey=seb_x64_backup.CalculateBrowserExamKey @2
+	TryGenerateVerificatorCode=seb_x64_backup.TryGenerateVerificatorCode @5
+	VerifyApplicationIntegrity=seb_x64_backup.VerifyApplicationIntegrity @6
+    VerifyRuntimeBehavior=seb_x64_backup.VerifyRuntimeBehavior @7
+    VerifyRuntimeComponents=seb_x64_backup.VerifyRuntimeComponents @8
